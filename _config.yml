@@ -48,15 +48,15 @@ background-img: "../img/intro-bg.jpg"
 ##############################
 
 dynamic-typing: True
-shuffle: True # Shuffle the lines.
+shuffle: False # Shuffle the lines.
 loop: True
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
 type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "The lower you fall, the higher you'll fly."
-  - text: "Winner is the one with no excuses."
+  - text: "It's a mad world out there . . . . ."
+  - text: "Carve your own niche or get lost in rat race"
 
 me-img: "/img/abinash.png"
 
@@ -111,12 +111,15 @@ syntax-highlight: True
 ############
 
 events:
+  - image: "/img/timeline/coala-analyzer.png"
+    date: "December 2016 - Today"
+    description: "Open Source !!!"
+  - image: "/img/timeline/iitkgp.png"
+    date: "July 2015 - Today"
+    description: "Home away from Home @ Kgp !!!!"
   - image: "/img/timeline/spidertocat.png"
-    date: "September 2017 - Today"
-    description: "Saving the neighborhood!"
-  - image: "/img/timeline/baracktocat.jpg"
-    date: "September 2007 - August 2013"
-    description: "Started coding"
+    date: "May 2007 - March 2015"
+    description: "School @ DAV!!!"
 
 # First image of the Timeline
 
@@ -159,7 +162,7 @@ social:
 # 404 page #
 ############
 
-404-img: "/img/labtocat.png"
+error-img: "/img/labtocat.png"
 
 ##################
 # GPG on Keybase #
