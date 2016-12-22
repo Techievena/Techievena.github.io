@@ -55,8 +55,8 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "It's a mad world out there . . . . ."
-  - text: "Carve your own niche or get lost in rat race"
+  - text: "Life is a Story . . . . ."
+  - text: "Make yours the Bestseller . . ."
 
 me-img: "/img/abinash.png"
 
