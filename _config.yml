@@ -12,7 +12,7 @@ url: "https://techievena.github.io"
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-baseurl: //
+baseurl: 
 
 # Google tracking id
 
@@ -30,10 +30,10 @@ force-https: True
 
 lang: "en"
 author: "Abinash Senapati"
-title: "{@Techievena}"
+title: "{ @Techievena }"
 description: "Blog and website of Abinash Senapati, blogging mainly for tech. Opinions expressed are mine."
 keywords: "senapati, abinash, techievena, personal, jekyll, theme"
-favicon: "/img/favicon.ico"
+favicon: "/img/black-lab-glass.ico"
 
 ################
 # Header layout #
@@ -56,9 +56,9 @@ start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
   - text: "The lower you fall, the higher you'll fly."
-  - text: "Where’s your will to be weird?"
+  - text: "Winner is the one with no excuses."
 
-me-img: "/img/jetpacktocat.png"
+me-img: "/img/abinash.png"
 
 ##############################
 # Color the browser elements #
@@ -136,7 +136,7 @@ email: "abinashsena@gmail.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Abinash Senapati is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
+author_blurb: "Abinash Senapati is an awesome person. He lives in Kharagpur, where he is pursuing his B.Tech. degree in I.I.T. Kharagpur. In his spare time, Abinash likes to do all kind of random stuffs one could imagine of........"
 author_blurb_image: "/img/author.png"
 
 ##################
@@ -145,13 +145,13 @@ author_blurb_image: "/img/author.png"
 
 social:
   - title: "facebook"
-    url: "https://facebook.com/"
+    url: "https://www.facebook.com/abinashsenapati10"
   - title: "twitter"
-    url: "https://twitter.com/"
+    url: "https://twitter.com/Techievena"
   - title: "github"
     url: "https://github.com/Techievena"
-  - title: "bitcoin"
-    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
+  - title: "linkedin"
+    url: "https://www.linkedin.com/in/abinash-senapati-3ab07910a"
   - title: "rss"
     url: "/feed.xml"
 
@@ -183,7 +183,7 @@ pages_list:
 
 # Exclusion list from the generated _site
 
-exclude: ["README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
+exclude: ["Gemfile", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
 
 # Pagination path
 

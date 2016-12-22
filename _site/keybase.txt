@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/techievena
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://techievena.github.io
+  * I am techievena (https://keybase.io/techievena) on keybase.
+  * I have a public key with fingerprint 5FCE EC3D 4CF5 24C1 3793  E427 DA4A A83C 2C31 DA63
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01019c600c09f417230358f3b7811e15b726378abb528def74d85f44f948262c1d6f0a",
+            "fingerprint": "5fceec3d4cf524c13793e427da4aa83c2c31da63",
+            "host": "keybase.io",
+            "key_id": "da4aa83c2c31da63",
+            "kid": "01019c600c09f417230358f3b7811e15b726378abb528def74d85f44f948262c1d6f0a",
+            "uid": "24fbfca6dcd5c9a61cf4ce0f0a4bea19",
+            "username": "techievena"
+        },
+        "service": {
+            "hostname": "techievena.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1482415648,
+    "expire_in": 157680000,
+    "prev": "e82b579ca5d5567ea6a3f65dca1815abf120b3dc7a81763eeb45f820e4091414",
+    "seqno": 11,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.61
+Comment: https://keybase.io/crypto
+
+yMIoAnicrZJ9aE5RHMefYeSZtVFTZsS1iBb33HPOfZmEpDGKSA3T07nnZc9l7vN4
+7n0eFmsTmmzLH5PIW142f1CTWZjXeYvWEqHkpREpa1heappy7vAXfzr/nM6v7+9z
+vt9fv1uZg0PhNP/zjOLRVbNvpnW0H0uGSla/nLBZsWOsQincrKzjAxcvZ9zzI+sc
+phQqKlCBRXVVpaolEDA0qEJsCmgbJgAcYNvQdGiYxLaxZjIuDMRMLBASFjI1XaOA
+6UIlSoEiHLeMJ+IJx/UlFgvKOYUMUYE1RAE0LMiRZjCCCDEh1SgEjOhQNkZjXtAh
+zdnE49OdmKzJR2TA3j/0/9l3cgCnIWELSnRGGaYW0QEViHJVSpDNCbACoccTLlnP
+pdrnNOrwFHeJUlmgyHrKoTwYbZDlL830MsePJu1fyeKJmB+jsXKpiPp+3CsMCH5F
+PGjZyO3Ib1jEdlwmJyo7UjzhOTFXKQRSSX0noAMZAgGsI7NA4ZviToJHnECBDd1U
+5Qn+4SmJ5KZmY8OiBDOMdYMTnUChY0YJMAEmtgCaakNGDWICQ4ec2wgLU1M5Ui2A
+AFKCeBvcmGQD6ZOUSabnlLnETya4UnnjeumQUFo4NDR9ULBqofDw7D8LuH77sB8j
+J91tZnklVl0xTK/eWpNhvqt5WhLem99wdl9bd9G9rDNjL78YfLpyV+eUVrGo77Wn
+xe9shYeyt4x/1duXW9rV0lx19suq6slvMrNr86d933182t21vcsn6f3nRjW2n9zG
+V17vX3rkcN2jnMdPgFa6LOt5UfXrjstHM775TV3zaoc/MVvOHRc1Fxs6X3Rl5OU0
+Te68sES73fYxdXVMfWZoxOe29In33TWNl048PFZ3qqKvfU7PjSsbH+wfuiC/qWJq
+USrrrbKjvP7DzIO7w82wfFPxOLu+4eaeaFFObc/O9wf1Z2zcV3jqwIq8XLy49VVf
+cuH83JZo99yq1vM7l1z7tH2Wl1vZ8RPMpEV2
+=gyLm
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/techievena
+
+==================================================================
