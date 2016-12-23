@@ -32,8 +32,9 @@ lang: "en"
 author: "Abinash Senapati"
 title: "{ @Techievena }"
 description: "Blog and website of Abinash Senapati, blogging mainly for tech. Opinions expressed are mine."
-keywords: "senapati, abinash, techievena, personal, jekyll, theme"
+keywords: "Senapati, Abinash, techievena, Kharagpur, IIT, kgp"
 favicon: "/img/black-lab-glass.ico"
+audio: "/music/pirate.mp3"
 
 ################
 # Header layout #
@@ -55,8 +56,8 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Life is a Story . . . . ."
-  - text: "Make yours the Bestseller . . ."
+  - text: "Tell me once more that I couldn't do . . . ."
+  - text: "I promise that I will prove you wrong . . . ."
 
 me-img: "/img/abinash.png"
 
@@ -139,7 +140,7 @@ email: "abinashsena@gmail.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Abinash Senapati is an awesome person. He lives in Kharagpur, where he is pursuing his B.Tech. degree in I.I.T. Kharagpur. In his spare time, Abinash likes to do all kind of random stuffs one could imagine of........"
+author_blurb: "Abinash Senapati is currently pursuing his B.Tech. degree in I.I.T. Kharagpur, majoring in Electronics and Electrical Communications Engineering. His life has been guided by all the failures he has gone through. He believes that only road to success is through commitment, and the strength to drive through that commitment when life gets hard.................."
 author_blurb_image: "/img/author.png"
 
 ##################

@@ -277,3 +277,7 @@ function addTohistory() {
 {% endif %}
 
 <!-- Javascript End -->
+
+{% if site.favicon %}
+  <audio class="back-audio" src="{{site.baseurl}}{{ site.audio }}" loop ="true" autoplay />
+{% endif %}
