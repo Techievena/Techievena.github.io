@@ -33,14 +33,14 @@ author: "Abinash Senapati"
 title: "{ @Techievena }"
 description: "Blog and website of Abinash Senapati, blogging mainly for tech. Opinions expressed are mine."
 keywords: "Senapati, Abinash, techievena, Kharagpur, IIT, kgp"
-favicon: "/img/black-lab-glass.ico"
+favicon: "/img/favicon.ico"
 audio: "/music/pirate.mp3"
 
 ################
 # Header layout #
 ################
 
-black-favicon: "/img/black-lab-glass.ico"
+black-favicon: "/img/blackicon.ico"
 
 background-img: "../img/intro-bg.jpg"
 
@@ -56,8 +56,8 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Tell me once more that I couldn't do . . . ."
-  - text: "I promise that I will prove you wrong . . . ."
+  - text: "Beleive you can . . ."
+  - text: "and you are halfway there"
 
 me-img: "/img/abinash.png"
 
@@ -101,7 +101,7 @@ google-plus-share: True
 tumblr-share: True
 pinterest-share: True
 pocket-share: True
-vkontakte-share: True
+vkontakte-share: False
 
 disqus-shortname: "techievena"
 
@@ -149,13 +149,13 @@ author_blurb_image: "/img/author.png"
 
 social:
   - title: "facebook"
-    url: "https://www.facebook.com/abinashsenapati10"
+    url: "https://www.facebook.com/Techievena"
   - title: "twitter"
     url: "https://twitter.com/Techievena"
   - title: "github"
     url: "https://github.com/Techievena"
   - title: "linkedin"
-    url: "https://www.linkedin.com/in/abinash-senapati-3ab07910a"
+    url: "https://www.linkedin.com/in/Techievena"
   - title: "rss"
     url: "/feed.xml"
 
