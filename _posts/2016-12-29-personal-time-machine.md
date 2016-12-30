@@ -16,7 +16,7 @@ But what if I say now you can see your future!!!! Sounds kinda interesting right
 This is called Time-series modelling in which we collect a dataset of events that have happened over a period of time and predict the future by analyzing such dataset.
 
 
-**This winter I was pondering over how to continue learning Data Analytics and Machine Learning; when a senior of mine, (Raj Anand) suggested that he'd give me a series of problems to work-out and it proved to be the best way to be in touch with the algorithms and commands in R as Data Analytics is a application-based field. So, this was one of them. Here is the <a href="https://github.com/Techievena/Retail-Analysis/blob/master/data.txt" target="\_blank">problem</a> and here is the [dataset](https://github.com/Techievena/Retail-Analysis/blob/master/Retail Analytics.xlsx) I was given to workout upon. So here I will describe all the concepts about time-series modelling while I workout the problem.**
+**This winter I was pondering over how to continue learning Data Analytics and Machine Learning; when a senior of mine, (Raj Anand) suggested that he'd give me a series of problems to work-out and it proved to be the best way to be in touch with the algorithms and commands in R as Data Analytics is a application-based field. So, this was one of them. Here is the [problem](https://github.com/Techievena/Retail-Analysis/blob/master/data.txt) and here is the [dataset](https://github.com/Techievena/Retail-Analysis/blob/master/Retail Analytics.xlsx) I was given to workout upon. So here I will describe all the concepts about time-series modelling while I workout the problem.**
 
 <br>**NB:-First thing to realise when you get such a dataset is to realise that this is a time-series before we proceed further processing the data.**
 
@@ -28,14 +28,14 @@ A time series can consist of the following components:
 **Seasonality** report the periodic fluctuation and it’s often related to the calendar.
 **Cyclic** component also refer to a periodic fluctuation but not fixed as the seasonality. For instance the price of many product are influenced by the inflation but these fluctuations are different than seasonality one.
 **Random** component is what remains after accounting for the other three components listed above. It’s itself composed of noise with underlying structure that needs to be modelled to forecast future values.
-![time-series](https://github.com/Techievena/Retail-Analysis/blob/master/timeseries.jpg)
+![time-series](https://github.com/Techievena/Retail-Analysis/blob/master/timeseries.jpg?raw=true "Time-Series")
 
 **To model any kind of time-series first of all we need to stationarize it.....**
 
 #### STATIONARY TIME-SERIES
 
 A random variable that is a time series is stationary if its statistical properties are all constant over time. Every time series can be made to be “stationary” by differencing, perhaps in conjunction with non-linear transformations such as logging or deflating. A stationary series has no trend, its variations around its mean have a constant amplitude, and it wiggles in a consistent fashion, i.e., its short-term random time patterns always look the same in a statistical sense. The latter condition means that its autocorrelations (correlations with its own prior deviations from the mean) remain constant over time, or equivalently, that its power spectrum remains constant over time. 
-![stationary time-series](https://github.com/Techievena/Retail-Analysis/blob/master/stationarytimeseries.jpg)
+![stationary time-series](https://github.com/Techievena/Retail-Analysis/blob/master/stationarytimeseries.jpg?raw=true)
 
 ### THE PROCESS
 
