@@ -23,10 +23,10 @@ This is called Time-series modelling in which we collect a dataset of events tha
 
 #### TIME-SERIES
 
-A time series can consist of the following components:
-**Trend** refers to the long-term movement. Shows if the values are increasing or decreasing over time.
-**Seasonality** report the periodic fluctuation and it’s often related to the calendar.
-**Cyclic** component also refer to a periodic fluctuation but not fixed as the seasonality. For instance the price of many product are influenced by the inflation but these fluctuations are different than seasonality one.
+A time series can consist of the following components:<br>
+**Trend** refers to the long-term movement. Shows if the values are increasing or decreasing over time.<br>
+**Seasonality** report the periodic fluctuation and it’s often related to the calendar.<br>
+**Cyclic** component also refer to a periodic fluctuation but not fixed as the seasonality. For instance the price of many product are influenced by the inflation but these fluctuations are different than seasonality one.<br>
 **Random** component is what remains after accounting for the other three components listed above. It’s itself composed of noise with underlying structure that needs to be modelled to forecast future values.
 ![time-series](https://github.com/Techievena/Retail-Analysis/blob/master/timeseries.jpg?raw=true "Time-Series")
 
@@ -35,7 +35,7 @@ A time series can consist of the following components:
 #### STATIONARY TIME-SERIES
 
 A random variable that is a time series is stationary if its statistical properties are all constant over time. Every time series can be made to be “stationary” by differencing, perhaps in conjunction with non-linear transformations such as logging or deflating. A stationary series has no trend, its variations around its mean have a constant amplitude, and it wiggles in a consistent fashion, i.e., its short-term random time patterns always look the same in a statistical sense. The latter condition means that its autocorrelations (correlations with its own prior deviations from the mean) remain constant over time, or equivalently, that its power spectrum remains constant over time. 
-![stationary time-series](https://github.com/Techievena/Retail-Analysis/blob/master/stationarytimeseries.jpg?raw=true)
+![stationary time-series](https://github.com/Techievena/Retail-Analysis/blob/master/stationarytimeseries.png?raw=true)
 
 ### THE PROCESS
 
@@ -48,6 +48,7 @@ A random variable that is a time series is stationary if its statistical propert
 		<li>Examine the remaining time series and determine a suitable model</li>
 	</ul>
 <li>Estimate the model parameters.</li>
+
 <li>Assess the model and return to step 1 if necessary.</li>
 </ol>
 

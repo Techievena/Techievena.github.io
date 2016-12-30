@@ -225,10 +225,10 @@
 
 <h4 id="time-series">TIME-SERIES</h4>
 
-<p>A time series can consist of the following components:
-<strong>Trend</strong> refers to the long-term movement. Shows if the values are increasing or decreasing over time.
-<strong>Seasonality</strong> report the periodic fluctuation and it’s often related to the calendar.
-<strong>Cyclic</strong> component also refer to a periodic fluctuation but not fixed as the seasonality. For instance the price of many product are influenced by the inflation but these fluctuations are different than seasonality one.
+<p>A time series can consist of the following components:<br />
+<strong>Trend</strong> refers to the long-term movement. Shows if the values are increasing or decreasing over time.<br />
+<strong>Seasonality</strong> report the periodic fluctuation and it’s often related to the calendar.<br />
+<strong>Cyclic</strong> component also refer to a periodic fluctuation but not fixed as the seasonality. For instance the price of many product are influenced by the inflation but these fluctuations are different than seasonality one.<br />
 <strong>Random</strong> component is what remains after accounting for the other three components listed above. It’s itself composed of noise with underlying structure that needs to be modelled to forecast future values.
 <img src="https://github.com/Techievena/Retail-Analysis/blob/master/timeseries.jpg?raw=true" alt="time-series" title="Time-Series" /></p>
 
@@ -237,7 +237,7 @@
 <h4 id="stationary-time-series">STATIONARY TIME-SERIES</h4>
 
 <p>A random variable that is a time series is stationary if its statistical properties are all constant over time. Every time series can be made to be “stationary” by differencing, perhaps in conjunction with non-linear transformations such as logging or deflating. A stationary series has no trend, its variations around its mean have a constant amplitude, and it wiggles in a consistent fashion, i.e., its short-term random time patterns always look the same in a statistical sense. The latter condition means that its autocorrelations (correlations with its own prior deviations from the mean) remain constant over time, or equivalently, that its power spectrum remains constant over time. 
-<img src="https://github.com/Techievena/Retail-Analysis/blob/master/stationarytimeseries.jpg?raw=true" alt="stationary time-series" /></p>
+<img src="https://github.com/Techievena/Retail-Analysis/blob/master/stationarytimeseries.png?raw=true" alt="stationary time-series" /></p>
 
 <h3 id="the-process">THE PROCESS</h3>
 
@@ -250,6 +250,7 @@
 		<li>Examine the remaining time series and determine a suitable model</li>
 	</ul>
 <li>Estimate the model parameters.</li>
+
 <li>Assess the model and return to step 1 if necessary.</li>
 </ol>
 
