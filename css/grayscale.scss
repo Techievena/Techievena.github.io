@@ -36,7 +36,7 @@ h6 {
     letter-spacing: 1px;
 }
 
-/* Added in { Personal } */
+/* Added in { @Techievena } */
 h4 {
     a.category {
         color: inherit;
@@ -238,7 +238,7 @@ a {
         margin-top: 125px;
         padding-top: 125px;
     }
-    /* Added in { Personal } for responsive images in posts and section contents */
+    /* Added in { @Techievena } for responsive images in posts and section contents */
     img {
         display: block;
         max-width: 100%;
@@ -246,7 +246,7 @@ a {
         margin: 0 auto;
         border: 1px solid $font-color;
     }
-    /* Added in { Personal } */
+    /* Added in { @Techievena } */
     ul,
     ol {
         text-align: center;
@@ -268,7 +268,7 @@ a {
       border: 1px solid $primary-color !important;
     }
 
-    /* Added in { Personal } */
+    /* Added in { @Techievena } */
     &#post {
         div.author img {
             border: 0px;
@@ -301,7 +301,7 @@ a {
     background-color: $secondary-color;
 }
 
-/* Added in { Personal } */
+/* Added in { @Techievena } */
 ul.social-buttons li a {
     display: block;
     width: 40px;
@@ -357,7 +357,7 @@ body {
     -webkit-tap-highlight-color: rgba($font-color, 0.2);
 }
 
-/* Added in { Personal } for Typed Cursor in Header */
+/* Added in { @Techievena } for Typed Cursor in Header */
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
@@ -384,7 +384,7 @@ body {
     50% { opacity:0; }
     100% { opacity:1; }
 }
-/* END Added in { Personal } for Typed Cursor in Header */
+/* END Added in { @Techievena } for Typed Cursor in Header */
 
 /* Animation for hand-swipe */
 @-webkit-keyframes swipe {
