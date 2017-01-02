@@ -294,6 +294,59 @@ So we have four columns namely:-<br />
 <strong>Item.code</strong><br />
 <strong>Units</strong></p>
 
+<p>Let’s move on to make a time-series for us. Here I chose time series of the sum of units sold in a day and total number of units sold in a day. Let’s have both of them.</p>
+
+<pre><code data-trim="" class="r">
+
+setwd("~/R/Working Directory/Retail-Analysis")
+library(data.table)
+library(plyr)
+library(xts)
+library(ggplot2)
+inputtable&lt;-read.csv("Retail Analytics.csv")
+
+date_unit&lt;-ddply(inputtable,~Date,summarise,Sum_Unit=sum(Units))
+dt&lt;-as.data.frame(table(inputtable$Date))
+date_unit$Frequency&lt;-dt$Freq
+date_unit$Date&lt;-as.Date(date_unit$Date)
+s_u&lt;-c()
+f_u&lt;-c()
+d_u&lt;-c()
+j=1
+k=0
+s.date&lt;-date_unit$Date[1]
+e.date&lt;-date_unit$Date[length(date_unit$Date)]
+for(i in s.date:e.date){
+  if(i==date_unit$Date[j]){
+    s_u&lt;-append(s_u,date_unit$Sum_Unit[j])
+    f_u&lt;-append(f_u,date_unit$Frequency[j])
+    j&lt;-j+1
+  }
+  else{
+    s_u&lt;-append(s_u,0.0)
+    f_u&lt;-append(f_u,0)
+  }
+  d_u&lt;-append(d_u,s.date+k)
+  k&lt;-k+1
+}
+date_unit&lt;-data.frame(Date=d_u, Sum_Unit=s_u, Frequency=f_u)
+time_series_unit&lt;-xts(date_unit$Sum_Unit,date_unit$Date)
+time_series_frequency&lt;-xts(date_unit$Frequency,date_unit$Date)
+rm(dt,d_u,f_u,s_u,e.date,s.date,i,j,k)
+
+</code></pre>
+
+<p>In the environment window as you can see we have four variables namely, <strong>inputtable</strong>(containing the table given to us), <strong>date_unit</strong>(containing sum of units and number of units sold per day), and two time series <strong>time_series_unit</strong>, time_series_frequency__. Now let’s plot both of them.</p>
+<pre><code data-trim="" class="r">
+
+par(mfrow=c(1,2))
+plot(time_series_unit)
+plot(time_series_frequency)
+
+</code></pre>
+<p><img src="https://github.com/Techievena/Retail-Analysis/blob/master/time_series_plot.png?raw=true" alt="our-time-series" title="Plots of both of the time series" />
+Both of them as we see are highly random plots.</p>
+
 <h2 id="processing-the-time-series">PROCESSING THE TIME-SERIES</h2>
 
 <h2 id="arima">ARIMA</h2>
@@ -314,8 +367,14 @@ The autocorrelation function (ACF) plot shows the correlation of the series with
 <em>The autocorrelation of Y at lag k is the correlation between Y and LAG(Y,k)</em><br />
 <strong>PACF PLOTS</strong><br />
 The partial autocorrelation function (PACF) plot shows the amount of autocorrelation at lag k that is not explained by lower-order autocorrelations<br />
-<em>The partial autocorrelation at lag k is the coefficient of LAG(Y,k) in an AR(k) model, i.e., in a regression of Y on LAG(Y,1), LAG(Y,2), .. up to LAG(Y,k)</em>
-<img src="https://github.com/Techievena/Retail-Analysis/blob/master/acfpacf.png?raw=true" alt="acf and pacf plot" /></p>
+<em>The partial autocorrelation at lag k is the coefficient of LAG(Y,k) in an AR(k) model, i.e., in a regression of Y on LAG(Y,1), LAG(Y,2), .. up to LAG(Y,k)</em></p>
+<pre><code data-trim="" class="r">
+
+acf(time_series_unit, lag.max = 20) #Positive corelation upto 14
+pacf(time_series_unit, lag.max = 20) #Positive partial-corelation upto 7
+
+</code></pre>
+<p><img src="https://github.com/Techievena/Retail-Analysis/blob/master/acfpacftsu.png?raw=true" alt="acf and pacf plot" /></p>
 
 <p>The ARIMA model is the general class of model for time-series forecasting and there are systematic set of rules for determining the model of ARIMA(p,d,q) forecasting equation, i.e. predicting <em>p(AR term)</em>, <em>d(I term)</em> and <em>q(MA term)</em>……..</p>
 
@@ -499,7 +558,7 @@ Fit this model (which will have only differences and no AR or MA coefficients) a
     <p><br><br></p>
 
     <div class="container text-center">
-        <p>Copyright &copy; Abinash Senapati 2016</p>
+        <p>Copyright &copy; Abinash Senapati 2017</p>
         
         <p style="font-size: 16px;"><a href="https://keybase.io/techievena" target="_blank"><i
                 class="fa fa-key"></i> techievena on Keybase</a></p>
@@ -646,7 +705,7 @@ function addTohistory() {
       new Hammer(post).on('swiperight', function(event) {
         addTohistory();
         
-          document.location.replace("/");
+          document.location.replace("/python/2017/01/01/python-package.html");
         
       });
     </script>

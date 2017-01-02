@@ -85,6 +85,59 @@ __Customer.code__
 __Item.code__  
 __Units__
 
+Let's move on to make a time-series for us. Here I chose time series of the sum of units sold in a day and total number of units sold in a day. Let's have both of them.
+
+<pre><code data-trim class="r">
+{% raw %}
+setwd("~/R/Working Directory/Retail-Analysis")
+library(data.table)
+library(plyr)
+library(xts)
+library(ggplot2)
+inputtable<-read.csv("Retail Analytics.csv")
+
+date_unit<-ddply(inputtable,~Date,summarise,Sum_Unit=sum(Units))
+dt<-as.data.frame(table(inputtable$Date))
+date_unit$Frequency<-dt$Freq
+date_unit$Date<-as.Date(date_unit$Date)
+s_u<-c()
+f_u<-c()
+d_u<-c()
+j=1
+k=0
+s.date<-date_unit$Date[1]
+e.date<-date_unit$Date[length(date_unit$Date)]
+for(i in s.date:e.date){
+  if(i==date_unit$Date[j]){
+    s_u<-append(s_u,date_unit$Sum_Unit[j])
+    f_u<-append(f_u,date_unit$Frequency[j])
+    j<-j+1
+  }
+  else{
+    s_u<-append(s_u,0.0)
+    f_u<-append(f_u,0)
+  }
+  d_u<-append(d_u,s.date+k)
+  k<-k+1
+}
+date_unit<-data.frame(Date=d_u, Sum_Unit=s_u, Frequency=f_u)
+time_series_unit<-xts(date_unit$Sum_Unit,date_unit$Date)
+time_series_frequency<-xts(date_unit$Frequency,date_unit$Date)
+rm(dt,d_u,f_u,s_u,e.date,s.date,i,j,k)
+{% endraw %}
+</code></pre>
+
+In the environment window as you can see we have four variables namely, __inputtable__(containing the table given to us), __date_unit__(containing sum of units and number of units sold per day), and two time series __time_series_unit__, time_series_frequency__. Now let's plot both of them.  
+<pre><code data-trim class="r">
+{% raw %}
+par(mfrow=c(1,2))
+plot(time_series_unit)
+plot(time_series_frequency)
+{% endraw %}
+</code></pre>  
+![our-time-series](https://github.com/Techievena/Retail-Analysis/blob/master/time_series_plot.png?raw=true "Plots of both of the time series")
+Both of them as we see are highly random plots.
+
 ## PROCESSING THE TIME-SERIES
 
 ## ARIMA
@@ -105,8 +158,14 @@ The autocorrelation function (ACF) plot shows the correlation of the series with
 *The autocorrelation of Y at lag k is the correlation between Y and LAG(Y,k)*  
 **PACF PLOTS**  
 The partial autocorrelation function (PACF) plot shows the amount of autocorrelation at lag k that is not explained by lower-order autocorrelations  
-*The partial autocorrelation at lag k is the coefficient of LAG(Y,k) in an AR(k) model, i.e., in a regression of Y on LAG(Y,1), LAG(Y,2), .. up to LAG(Y,k)*
-![acf and pacf plot](https://github.com/Techievena/Retail-Analysis/blob/master/acfpacf.png?raw=true)
+*The partial autocorrelation at lag k is the coefficient of LAG(Y,k) in an AR(k) model, i.e., in a regression of Y on LAG(Y,1), LAG(Y,2), .. up to LAG(Y,k)*  
+<pre><code data-trim class="r">
+{% raw %}
+acf(time_series_unit, lag.max = 20) #Positive corelation upto 14
+pacf(time_series_unit, lag.max = 20) #Positive partial-corelation upto 7
+{% endraw %}
+</code></pre> 
+![acf and pacf plot](https://github.com/Techievena/Retail-Analysis/blob/master/acfpacftsu.png?raw=true)
 
 The ARIMA model is the general class of model for time-series forecasting and there are systematic set of rules for determining the model of ARIMA(p,d,q) forecasting equation, i.e. predicting *p(AR term)*, *d(I term)* and *q(MA term)*........ 
 
