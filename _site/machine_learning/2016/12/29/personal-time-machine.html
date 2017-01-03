@@ -1,13 +1,11 @@
-
-<!-- Post Layout Start -->
-
 <!DOCTYPE html>
-<html lang="en">
+<!-- Post Layout Start --><html lang="en">
 
   
 <!-- HEAD Start -->
 
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
 
 
@@ -42,7 +40,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="/css/rrssb.css" />
+  <link rel="stylesheet" href="/css/rrssb.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -199,43 +197,48 @@
                 machine_learning
               </a>.
               <a href="/machine_learning/2016/12/29/personal-time-machine.html#disqus_thread">Comments</a>
-              <br />
+              <br>
               
                 <a class="tag" href="/tags/ARIMA.html">#ARIMA</a>
               
-                <a class="tag" href="/tags/Time Modelling.html">#Time Modelling</a>
+                <a class="tag" href="/tags/Time%20Modelling.html">#Time Modelling</a>
               
-                <a class="tag" href="/tags/Prediction via Analysis.html">#Prediction via Analysis</a>
+                <a class="tag" href="/tags/Prediction%20via%20Analysis.html">#Prediction via Analysis</a>
               
             </small>
           </h4>
 
           <h2 id="going-ahead-of-time">GOING AHEAD OF TIME</h2>
-<p>Time is the most influential factor in this world. It is abstract. Everything in this world is commanded and decided by time. Nobody can escape the hold of time.<br />
-We all must have read or at-least heard of the all-time classic of H.G. Wells, in which a scientist invents a machine that transports him far into the future where he discovers a changed world inhabited by two unusual races, the Eloi and the Morlocks. From then… or even back, human race has been fantasizing about gaining control over time; because it is the time which gives us the opportunity to make use of it. Those who make best use of time and avail those opportunities grow and rise in life. He is the wisest who makes the best use of time in his hand.<br />
+<p>Time is the most influential factor in this world. It is abstract. Everything in this world is commanded and decided by time. Nobody can escape the hold of time.<br>
+We all must have read or at-least heard of the all-time classic of H.G. Wells, in which a scientist invents a machine that transports him far into the future where he discovers a changed world inhabited by two unusual races, the Eloi and the Morlocks. From then… or even back, human race has been fantasizing about gaining control over time; because it is the time which gives us the opportunity to make use of it. Those who make best use of time and avail those opportunities grow and rise in life. He is the wisest who makes the best use of time in his hand.<br>
 But what if I say <strong>now you can see your future!!!!</strong> Sounds kinda interesting right?? Ya it’s true. Now…. with the advancement of modern technologies, we have come to a stage where we can see ahead of time and if required, be prepared for the same. With the recent developments, going on in the sector of AI and machine learning; Now we can forecast what’s going to happen the next day, a day after or even a month after; <strong>all by ourselves.</strong></p>
 
 <p>This is called Time-series modelling, in which we collect a dataset of events that have happened over a period of time and predict the future by analyzing such a dataset.</p>
 
-<p><strong>This winter while I was pondering over how to continue learning Data Analytics and Machine Learning; a senior of mine, (Raj Anand) suggested that he’d give me a series of problems to work-out and it proved to be the best way to be in touch with the ML algorithms and programming in R as Data Analytics is a application-based field. So, this was one of them. Here is the <a href="https://github.com/Techievena/Retail-Analysis/blob/master/data.txt">problem</a> and here is the <a href="https://github.com/Techievena/Retail-Analysis/blob/master/Retail Analytics.xlsx">dataset</a> I was given to workout upon. So here I will describe all the concepts about time-series modelling while I workout the problem.</strong><br />
-So, lets see the future!!!<br />
+<p><strong>This winter while I was pondering over how to continue learning Data Analytics and Machine Learning; a senior of mine, (Raj Anand) suggested that he’d give me a series of problems to work-out and it proved to be the best way to be in touch with the ML algorithms and programming in R as Data Analytics is a application-based field. So, this was one of them. Here is the <a href="https://github.com/Techievena/Retail-Analysis/blob/master/data.txt">problem</a> and here is the <a href="https://github.com/Techievena/Retail-Analysis/blob/master/Retail%20Analytics.xlsx">dataset</a> I was given to workout upon. So here I will describe all the concepts about time-series modelling while I workout the problem.</strong><br>
+So, lets see the future!!!<br>
 <strong>NB:-First thing to realise when you get such a dataset is that, this is a time-series before we proceed further processing the data.</strong></p>
 
 <h2 id="time-series">TIME-SERIES</h2>
 <p>A time series can consist of the following components:</p>
 <ul>
-  <li><strong>Trend</strong> refers to the long-term movement. Shows if the values are increasing or decreasing over time.</li>
-  <li><strong>Seasonality</strong> report the periodic fluctuation and it’s often related to the calendar.</li>
-  <li><strong>Cyclic</strong> component also refer to a periodic fluctuation but not fixed as the seasonality. For instance the price of many product are influenced by the inflation but these fluctuations are different than seasonality one.</li>
-  <li><strong>Random</strong> component is what remains after accounting for the other three components listed above. It’s itself composed of noise with underlying structure that needs to be modelled to forecast future values.<br />
-<img src="https://github.com/Techievena/Retail-Analysis/blob/master/timeseries.jpg?raw=true" alt="time-series" title="Decomposing the data into its components.." /></li>
+  <li>
+<strong>Trend</strong> refers to the long-term movement. Shows if the values are increasing or decreasing over time.</li>
+  <li>
+<strong>Seasonality</strong> report the periodic fluctuation and it’s often related to the calendar.</li>
+  <li>
+<strong>Cyclic</strong> component also refer to a periodic fluctuation but not fixed as the seasonality. For instance the price of many product are influenced by the inflation but these fluctuations are different than seasonality one.</li>
+  <li>
+<strong>Random</strong> component is what remains after accounting for the other three components listed above. It’s itself composed of noise with underlying structure that needs to be modelled to forecast future values.<br>
+<img src="https://github.com/Techievena/Retail-Analysis/blob/master/timeseries.jpg?raw=true" alt="time-series" title="Decomposing the data into its components..">
+</li>
 </ul>
 
 <p><strong>To model any kind of time-series first of all we need to stationarize it…..</strong></p>
 
 <h2 id="stationary-time-series">STATIONARY TIME-SERIES</h2>
 <p>A random variable that is a time series is stationary if its statistical properties (mean, variance, autocorrelations, etc.) are all constant over time. Every time series can be made to be “stationary” by differencing, perhaps in conjunction with non-linear transformations such as logging or deflating. A stationary series has no trend, its variations around its mean have a constant amplitude, and it wiggles in a consistent fashion, i.e., its short-term random time patterns always look the same in a statistical sense. The latter condition means that its autocorrelations (correlations with its own prior deviations from the mean) remain constant over time, or equivalently, that its power spectrum remains constant over time. 
-<img src="https://github.com/Techievena/Retail-Analysis/blob/master/stationarytimeseries.png?raw=true" alt="stationary time-series" /></p>
+<img src="https://github.com/Techievena/Retail-Analysis/blob/master/stationarytimeseries.png?raw=true" alt="stationary time-series"></p>
 
 <h2 id="the-process">THE PROCESS</h2>
 
@@ -248,10 +251,10 @@ So, lets see the future!!!<br />
     </ul>
   </li>
   <li>Estimate the model parameters.
-<br /><br />3. Assess the model and return to step 1 if necessary.</li>
+<br><br>3. Assess the model and return to step 1 if necessary.</li>
 </ol>
 
-<p>Now on to data processing …. Our first job will be to complete the empty rows in the dataset and store it in a different file which will be handy for further processing.<br />
+<p>Now on to data processing …. Our first job will be to complete the empty rows in the dataset and store it in a different file which will be handy for further processing.<br>
 <strong>N.B.:- Handling csv files are much faster in R. Even if no processing is required, kindly make it a habit to convert your xlsx files into csv files when handling large datasets</strong></p>
 
 <pre><code data-trim="" class="r">
@@ -287,11 +290,11 @@ write.csv(retailanalytics,"Retail Analytics.csv", row.names=F)
 
 </code></pre>
 
-<p>So, now we have a complete dataset to workout with. I have stored the above code in a file (datacompletion.R), and will further work on different files reading from <strong>Retail Analytics.csv</strong><br />
-So we have four columns namely:-<br />
-<strong>Date</strong><br />
-<strong>Customer.code</strong><br />
-<strong>Item.code</strong><br />
+<p>So, now we have a complete dataset to workout with. I have stored the above code in a file (datacompletion.R), and will further work on different files reading from <strong>Retail Analytics.csv</strong><br>
+So we have four columns namely:-<br>
+<strong>Date</strong><br>
+<strong>Customer.code</strong><br>
+<strong>Item.code</strong><br>
 <strong>Units</strong></p>
 
 <p>Let’s move on to make a time-series for us. Here I chose time series of the sum of units sold in a day and total number of units sold in a day. Let’s have both of them.</p>
@@ -336,7 +339,7 @@ rm(dt,d_u,f_u,s_u,e.date,s.date,i,j,k)
 
 </code></pre>
 
-<p>In the environment window as you can see we have four variables namely, <strong>inputtable</strong>(containing the table given to us), <strong>date_unit</strong>(containing sum of units and number of units sold per day), and two time series <strong>time_series_unit</strong>, time_series_frequency__. Now let’s plot both of them.</p>
+<p>In the environment window as you can see we have four variables namely, <strong>inputtable</strong>(containing the table given to us), <strong>date_unit</strong>(containing sum of units and number of units sold per day), and two time series <strong>time_series_unit</strong> and <strong>time_series_frequency</strong>. Now let’s plot both of them.</p>
 <pre><code data-trim="" class="r">
 
 par(mfrow=c(1,2))
@@ -344,8 +347,8 @@ plot(time_series_unit)
 plot(time_series_frequency)
 
 </code></pre>
-<p><img src="https://github.com/Techievena/Retail-Analysis/blob/master/time_series_plot.png?raw=true" alt="our-time-series" title="Plots of both of the time series" />
-Both of them as we see are highly random plots.</p>
+<p><img src="https://github.com/Techievena/Retail-Analysis/blob/master/time_series_plot.png?raw=true" alt="our-time-series" title="Plots of both of the time series">
+Both of them, as we see are highly random plots.</p>
 
 <h2 id="processing-the-time-series">PROCESSING THE TIME-SERIES</h2>
 
@@ -356,17 +359,17 @@ Both of them as we see are highly random plots.</p>
 <h5 id="i--integrated-version-of-a-time-series-which-needs-to-be-differenced-to-be-made-stationary">I:- Integrated (Version of a time series which needs to be differenced to be made stationary)</h5>
 
 <h5 id="ma--moving-average-terms-containing-lags-of--of-the-forecast-errors-in-the-forecasting-equation">MA:- Moving Average (Terms containing lags of  of the forecast errors in the forecasting equation)</h5>
-<p>A time-series can be viewed as a combination of signal and noise, and the signal could be a pattern of fast or slow mean reversion/sinusoidal oscillation/rapid alternation in sign, and it could also have a seasonal component.  An ARIMA model can be viewed as a “filter” that tries to separate the signal from the noise, and the signal is then extrapolated into the future to obtain forecasts.<br />
+<p>A time-series can be viewed as a combination of signal and noise, and the signal could be a pattern of fast or slow mean reversion/sinusoidal oscillation/rapid alternation in sign, and it could also have a seasonal component.  An ARIMA model can be viewed as a “filter” that tries to separate the signal from the noise, and the signal is then extrapolated into the future to obtain forecasts.<br>
 The ARIMA forecasting equation for a stationary time series is a linear (i.e., regression-type) equation in which the predictors consist of lags of the dependent variable(p) and/or lags of the forecast errors(q).</p>
 
 <p>To identify the ARIMA model, first we must get acquainted with the tools for model determination…</p>
 
 <h2 id="acf-and-pacf-plots">ACF AND PACF PLOTS</h2>
-<p><strong>ACF PLOTS</strong><br />
-The autocorrelation function (ACF) plot shows the correlation of the series with itself at different lags<br />
-<em>The autocorrelation of Y at lag k is the correlation between Y and LAG(Y,k)</em><br />
-<strong>PACF PLOTS</strong><br />
-The partial autocorrelation function (PACF) plot shows the amount of autocorrelation at lag k that is not explained by lower-order autocorrelations<br />
+<p><strong>ACF PLOTS</strong><br>
+The autocorrelation function (ACF) plot shows the correlation of the series with itself at different lags<br>
+<em>The autocorrelation of Y at lag k is the correlation between Y and LAG(Y,k)</em><br>
+<strong>PACF PLOTS</strong><br>
+The partial autocorrelation function (PACF) plot shows the amount of autocorrelation at lag k that is not explained by lower-order autocorrelations<br>
 <em>The partial autocorrelation at lag k is the coefficient of LAG(Y,k) in an AR(k) model, i.e., in a regression of Y on LAG(Y,1), LAG(Y,2), .. up to LAG(Y,k)</em></p>
 <pre><code data-trim="" class="r">
 
@@ -374,44 +377,44 @@ acf(time_series_unit, lag.max = 20) #Positive corelation upto 14
 pacf(time_series_unit, lag.max = 20) #Positive partial-corelation upto 7
 
 </code></pre>
-<p><img src="https://github.com/Techievena/Retail-Analysis/blob/master/acfpacftsu.png?raw=true" alt="acf and pacf plot" /></p>
+<p><img src="https://github.com/Techievena/Retail-Analysis/blob/master/acfpacftsu.png?raw=true" alt="acf and pacf plot"></p>
 
 <p>The ARIMA model is the general class of model for time-series forecasting and there are systematic set of rules for determining the model of ARIMA(p,d,q) forecasting equation, i.e. predicting <em>p(AR term)</em>, <em>d(I term)</em> and <em>q(MA term)</em>……..</p>
 
 <h2 id="rules-for-determining-arimapdq-model">RULES FOR DETERMINING ARIMA(P,D,Q) MODEL</h2>
 
 <blockquote>
-  <p><strong>(i)</strong> First determine whether a nonlinear transformation such as logging or deflating is necessary to straighten out exponential growth curves  and/or stabilize the variance (i.e., to make the local random variations in the series roughly the same in magnitude from beginning to end).<br />
+  <p><strong>(i)</strong> First determine whether a nonlinear transformation such as logging or deflating is necessary to straighten out exponential growth curves  and/or stabilize the variance (i.e., to make the local random variations in the series roughly the same in magnitude from beginning to end).<br>
 If so, then apply the transformation.</p>
 </blockquote>
 
 <blockquote>
-  <p><strong>(ii)</strong> If the series looks non-stationary at this point i.e., if it displays a trend or random-walk behavior —&gt; set the order of nonseasonal differencing to 1.<br />
+  <p><strong>(ii)</strong> If the series looks non-stationary at this point i.e., if it displays a trend or random-walk behavior —&gt; set the order of nonseasonal differencing to 1.<br>
 If it still displays a trend or is only slowly mean-reverting after one order of differencing, don’t immediately apply another order of differencing, but keep it in mind for later on (step(vi) below).</p>
 </blockquote>
 
 <blockquote>
-  <p><strong>(iii)</strong> Look  at the ACF and PACF plots of the series  you have  at this point. If you don’t see any significant autocorrelations, then stop. You’re done!<br />
+  <p><strong>(iii)</strong> Look  at the ACF and PACF plots of the series  you have  at this point. If you don’t see any significant autocorrelations, then stop. You’re done!<br>
 You’ve identified either a mean model or a random walk model, depending on whether you used 0 or 1 order of differencing in getting to this point.</p>
 </blockquote>
 
 <blockquote>
-  <p><strong>(iv)</strong> If you do see some significant autocorrelations, and if the first one or two bars on the ACF plot are significant and negative, followed by a fairly sharp cutoff, while the PACF plot shows a more gradual decay pattern from below, that is a clear sign that you need at least one MA term (i.e., q=1 or q=2).<br />
-On the other hand, if the first one or two bars on the PACF plot are significant and positive, followed by a fairly sharp cutoff, while the ACF plot shows a more gradual decay pattern from above, that is a clear sign that you need at least one AR term (i.e., p=1 or p=2).<br />
-If you see one of these two patterns, enter a 1 in the MA box or the AR box, depending on which one it is. If you already have a 1 there, make it a 2.<br />
-Fit the model and look at the ACF and PACF plots and time series plot of the residuals. If any of the first one or two bars are significant in the ACF or PACF plot, apply the same reasoning as above to determine whether to increase the MA order or AR order by one more. You should not go above 2 except in very rare circumstances.<br />
+  <p><strong>(iv)</strong> If you do see some significant autocorrelations, and if the first one or two bars on the ACF plot are significant and negative, followed by a fairly sharp cutoff, while the PACF plot shows a more gradual decay pattern from below, that is a clear sign that you need at least one MA term (i.e., q=1 or q=2).<br>
+On the other hand, if the first one or two bars on the PACF plot are significant and positive, followed by a fairly sharp cutoff, while the ACF plot shows a more gradual decay pattern from above, that is a clear sign that you need at least one AR term (i.e., p=1 or p=2).<br>
+If you see one of these two patterns, enter a 1 in the MA box or the AR box, depending on which one it is. If you already have a 1 there, make it a 2.<br>
+Fit the model and look at the ACF and PACF plots and time series plot of the residuals. If any of the first one or two bars are significant in the ACF or PACF plot, apply the same reasoning as above to determine whether to increase the MA order or AR order by one more. You should not go above 2 except in very rare circumstances.<br>
 <strong>N.B.:- You should use only AR coefficients or only MA coefficients except in very rare circumstances, i.e., either the MA order will be zero or the AR order will be zero. (Occasionally one of them will be 2 and the other will be 1, but not very often.)</strong></p>
 </blockquote>
 
 <blockquote>
-  <p><strong>(v)</strong> Do not pay any attention to isolated spikes in the ACF or PACF plot beyond lag 3 if you are working with nonseasonal data. You are mainly interested in the first few autocorrelations and partial autocorrelations.<br />
+  <p><strong>(v)</strong> Do not pay any attention to isolated spikes in the ACF or PACF plot beyond lag 3 if you are working with nonseasonal data. You are mainly interested in the first few autocorrelations and partial autocorrelations.<br>
 Beyond that, don’t look at individual autocorrelations; you just look to see if there is some systematic pattern.(for seasonality)</p>
 </blockquote>
 
 <blockquote>
-  <p><strong>(vi)</strong> If the residuals of the model you converged on in step(iv) do not look quite stationary; e.g., if there is a sort of “wave” pattern or other non-random pattern in the residuals, then you may want to increase the order of differencing.<br />
-Also, if you have one or more AR coefficients in the model at this point, add their values together and check to see if it is very close to 1 (say, on the order of 0.95 or more). If so, that is also a sign that you should try a higher order of differencing.<br />
-If you see either of these patterns, set the MA and AR orders back to zero and increase the order of differencing by 1 if the current value is 0 or 1. If you have 2 differences at this point, remove any constants in model.<br />
+  <p><strong>(vi)</strong> If the residuals of the model you converged on in step(iv) do not look quite stationary; e.g., if there is a sort of “wave” pattern or other non-random pattern in the residuals, then you may want to increase the order of differencing.<br>
+Also, if you have one or more AR coefficients in the model at this point, add their values together and check to see if it is very close to 1 (say, on the order of 0.95 or more). If so, that is also a sign that you should try a higher order of differencing.<br>
+If you see either of these patterns, set the MA and AR orders back to zero and increase the order of differencing by 1 if the current value is 0 or 1. If you have 2 differences at this point, remove any constants in model.<br>
 Fit this model (which will have only differences and no AR or MA coefficients) and look at the ACF and PACF of the residuals. Go back to steps (iii) and (iv) at this point and apply the same reasoning to determine whether you need to add AR or MA coefficients.</p>
 </blockquote>
 
@@ -427,7 +430,81 @@ Fit this model (which will have only differences and no AR or MA coefficients) a
   <p><strong>(ix)</strong> Ideally you will end up with a fairly simple model whose highest-order coefficients are significant and which has no significant residual autocorrelations and shows no signs of under-differencing or over-differencing. Also, you should check the residual normal probability plot to make sure it looks OK, as with any type of forecasting model.</p>
 </blockquote>
 
-<p>😉</p>
+<p>Now let’s apply differencing to both the time series
+<img src="https://github.com/Techievena/Retail-Analysis/blob/master/diff_plot.png?raw=true" alt="diff-time-series" title="Plots of differenced time series">
+As, we see, this plot is slightly more stationary than original plot i.e., it is mean reverting. So, we need a differencing of 1. But we need to deal with is the change in variance and the high peaks at some points.</p>
+
+<p>Also if you carefully notice the acf and pacf plots of <strong>time_series_unit</strong> you can see a seasonality pattern with seasonality with a period of 7. Well the spikes are not very clear there but it will be clear with the acf plots of diff time series.</p>
+
+<pre><code data-trim="" class="r">
+
+par(mfrow=c(1,2))
+acf(diff(time_series_unit), lag.max = 20, na.action = na.pass, ci.type='ma') #lag1 correlation = -0.5 differencing done
+acf(diff(time_series_frequency), lag.max = 20, na.action = na.pass, ci.type='ma') #lag1 correlation = -0.5 differencing done
+
+</code></pre>
+<p><img src="https://github.com/Techievena/Retail-Analysis/blob/master/acfdiff.png?raw=true" alt="acf plot of diff" title="Plots of acf of the diff time series"></p>
+<ul>
+  <li>Positive spikes at lag of 7 =&gt; <strong>Seasonality of period 7</strong>
+</li>
+  <li>Lag1 autocorrelation greater than <strong>-0.5</strong> =&gt; Slight overdifferencing done</li>
+</ul>
+
+<p><strong>N.B.:- Adding an AR term corrects for mild under-differencing, while adding an MA term corrects for mild overdifferencing.</strong><br>
+<strong>N.B.:- An SAR signature usually occurs when the autocorrelation at the seasonal period is positive, whereas an SMA signature usually occurs when the seasonal autocorrelation is negative.</strong></p>
+
+<p>Taking both of them into consideration, let’s apply our ARIMA model.</p>
+
+<pre><code data-trim="" class="r">
+
+fit&lt;-arima(time_series_unit, order=c(0,1,1), seasonal=list(order=c(1,1,0), period=7))
+fitunit&lt;-arima(time_series_frequency, order=c(0,1,1), seasonal=list(order=c(1,1,0), period=7))
+
+forecast(fit, h=7)
+#    Point Forecast      Lo 80    Hi 80     Lo 95    Hi 95
+#914      -1.095303 -130.50604 128.3154 -199.0119 196.8213
+#915      37.789484  -91.62125 167.2002 -160.1272 235.7061
+#916      35.287727  -94.12301 164.6985 -162.6289 233.2044
+#917      40.755913  -88.65482 170.1666 -157.1607 238.6726
+#918       3.672253 -125.73848 133.0830 -194.2444 201.5889
+#919      14.485642 -114.92509 143.8964 -183.4310 212.4023
+#920      21.723083 -107.68765 151.1338 -176.1936 219.6397
+#Forecast for the next 7 days is shown in column Point Forecast
+#Let's get the plot
+plot(forecast(arima(time_series_unit, order=c(0,1,1), seasonal=list(order=c(1,1,0), period=7)),h=7), main="ARIMA Forecast for time_series_unit")
+
+forecast(fitunit, h=7)
+#    Point Forecast      Lo 80    Hi 80     Lo 95    Hi 95
+#914    -0.08618037 -18.790181 18.61782 -28.69148 28.51912
+#915    12.23003197  -6.473969 30.93403 -16.37527 40.83533
+#916     6.35255708 -12.351444 25.05656 -22.25274 34.95786
+#917    11.79129452  -6.912706 30.49530 -16.81401 40.39660
+#918     3.03634473 -15.667656 21.74035 -25.56896 31.64165
+#919     6.47508218 -12.228919 25.17908 -22.13022 35.08038
+#920     8.91381963  -9.790181 27.61782 -19.69148 37.51912
+#Forecast for the next 7 days is shown in column Point Forecast
+#Let's get the plot
+plot(forecast(arima(time_series_frequency, order=c(0,1,1), seasonal=list(order=c(1,1,0), period=7)),h=7), main="ARIMA Forecast for time_series_frequency")
+
+</code></pre>
+<p><img src="https://github.com/Techievena/Retail-Analysis/blob/master/arima_tsu.png?raw=true" alt="arima time_series_unit" title="Forecasts from ARIMA(0,1,1)(1,1,0)">
+<img src="https://github.com/Techievena/Retail-Analysis/blob/master/arima_tsf.png?raw=true" alt="arima time_series_frequency" title="Forecasts from ARIMA(0,1,1)(1,1,0)"></p>
+
+<p>To get a more clear picture of our forecasts,</p>
+<pre><code data-trim="" class="r">
+
+par(mfrow=c(1,2))
+plot(forecast(arima(time_series_unit, order=c(0,1,1), seasonal=list(order=c(1,1,0), period=7)),h=7), include=50, main="TIME_SERIES_UNIT")
+plot(forecast(arima(time_series_frequency, order=c(0,1,1), seasonal=list(order=c(1,1,0), period=7)),h=7), include=50, main="TIME_SERIES_FREQUENCY")
+
+</code></pre>
+<p><img src="https://github.com/Techievena/Retail-Analysis/blob/master/arima_pred.png?raw=true" alt="arima-time-series" title="Forecasts of both of the time series"></p>
+
+<p>So, we have got some nice predictions of our total number of units and total number of products to be sold each day, for the next week. Nice going!!!</p>
+
+<p>The application of time series modelling ends right here. Now, for knowing who are the customers who are coming to our shop for the next week, you have to wait for my another blog post, because that involves a completely different concept like calculating <strong>CLV(Customer Lifetime Value)</strong> using recency and frequency. Basically, a completely different concept which I do not want to discuss here. Because mixing both of them will cause a lot of chaos and everything will be messed up. You may subscribe to my <a href="https://techievena.github.io/feed.xml">RSS feed</a> to get updates about when the post about CLV is coming.</p>
+
+<p><strong>Well till then, happy coding!!!</strong> <img class="emoji" title=":wink:" alt=":wink:" src="https://assets.github.com/images/icons/emoji/unicode/1f609.png" height="20" width="20" align="absmiddle"></p>
 
 
           
@@ -436,11 +513,10 @@ Fit this model (which will have only differences and no AR or MA coefficients) a
   <ul class="rrssb-buttons clearfix">
     
       <li class="rrssb-email">
-        <a href="mailto:?subject=Personal Time Machine&body=https://techievena.github.io/machine_learning/2016/12/29/personal-time-machine.html" data-proofer-ignore>
+        <a href="mailto:?subject=Personal%20Time%20Machine&amp;body=https://techievena.github.io/machine_learning/2016/12/29/personal-time-machine.html" data-proofer-ignore>
           <span class="rrssb-icon">
-            <svg xmlns="https://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
-              <path d="M20.11 26.147c-2.335 1.05-4.36 1.4-7.124 1.4C6.524 27.548.84 22.916.84 15.284.84 7.343 6.602.45 15.4.45c6.854 0 11.8 4.7 11.8 11.252 0 5.684-3.193 9.265-7.398 9.3-1.83 0-3.153-.934-3.347-2.997h-.077c-1.208 1.986-2.96 2.997-5.023 2.997-2.532 0-4.36-1.868-4.36-5.062 0-4.75 3.503-9.07 9.11-9.07 1.713 0 3.7.4 4.6.972l-1.17 7.203c-.387 2.298-.115 3.3 1 3.4 1.674 0 3.774-2.102 3.774-6.58 0-5.06-3.27-8.994-9.304-8.994C9.05 2.87 3.83 7.545 3.83 14.97c0 6.5 4.2 10.2 10 10.202 1.987 0 4.09-.43 5.647-1.245l.634 2.22zM16.647 10.1c-.31-.078-.7-.155-1.207-.155-2.572 0-4.596 2.53-4.596 5.53 0 1.5.7 2.4 1.9 2.4 1.44 0 2.96-1.83 3.31-4.088l.592-3.72z"
-              />
+            <svg xmlns="https://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 28 28">
+              <path d="M20.11 26.147c-2.335 1.05-4.36 1.4-7.124 1.4C6.524 27.548.84 22.916.84 15.284.84 7.343 6.602.45 15.4.45c6.854 0 11.8 4.7 11.8 11.252 0 5.684-3.193 9.265-7.398 9.3-1.83 0-3.153-.934-3.347-2.997h-.077c-1.208 1.986-2.96 2.997-5.023 2.997-2.532 0-4.36-1.868-4.36-5.062 0-4.75 3.503-9.07 9.11-9.07 1.713 0 3.7.4 4.6.972l-1.17 7.203c-.387 2.298-.115 3.3 1 3.4 1.674 0 3.774-2.102 3.774-6.58 0-5.06-3.27-8.994-9.304-8.994C9.05 2.87 3.83 7.545 3.83 14.97c0 6.5 4.2 10.2 10 10.202 1.987 0 4.09-.43 5.647-1.245l.634 2.22zM16.647 10.1c-.31-.078-.7-.155-1.207-.155-2.572 0-4.596 2.53-4.596 5.53 0 1.5.7 2.4 1.9 2.4 1.44 0 2.96-1.83 3.31-4.088l.592-3.72z"></path>
             </svg>
           </span>
           <span class="rrssb-text">email</span>
@@ -449,10 +525,9 @@ Fit this model (which will have only differences and no AR or MA coefficients) a
     
     
       <li class="rrssb-facebook">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://techievena.github.io/machine_learning/2016/12/29/personal-time-machine.html&title=Personal Time Machine" class="popup">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://techievena.github.io/machine_learning/2016/12/29/personal-time-machine.html&amp;title=Personal%20Time%20Machine" class="popup">
           <span class="rrssb-icon">
-            <svg xmlns="https://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="29" height="29" viewBox="0 0 29 29"><path d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z"
-              class="cls-2" fill-rule="evenodd"/></svg>
+            <svg xmlns="https://www.w3.org/2000/svg" preserveaspectratio="xMidYMid" width="29" height="29" viewbox="0 0 29 29"><path d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z" class="cls-2" fill-rule="evenodd"></path></svg>
           </span>
           <span class="rrssb-text">facebook</span>
         </a>
@@ -460,9 +535,8 @@ Fit this model (which will have only differences and no AR or MA coefficients) a
     
     
       <li class="rrssb-twitter">
-        <a href="https://twitter.com/share?url=https://techievena.github.io/machine_learning/2016/12/29/personal-time-machine.html&text=Personal Time Machine"
-        class="popup">
-          <span class="rrssb-icon"><svg xmlns="https://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><path d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62c-3.122.162-6.22-.646-8.86-2.32 2.702.18 5.375-.648 7.507-2.32-2.072-.248-3.818-1.662-4.49-3.64.802.13 1.62.077 2.4-.154-2.482-.466-4.312-2.586-4.412-5.11.688.276 1.426.408 2.168.387-2.135-1.65-2.73-4.62-1.394-6.965C5.574 7.816 9.54 9.84 13.802 10.07c-.842-2.738.694-5.64 3.434-6.48 2.018-.624 4.212.043 5.546 1.682 1.186-.213 2.318-.662 3.33-1.317-.386 1.256-1.248 2.312-2.4 2.942 1.048-.106 2.07-.394 3.02-.85-.458 1.182-1.343 2.15-2.48 2.71z"/></svg></span>
+        <a href="https://twitter.com/share?url=https://techievena.github.io/machine_learning/2016/12/29/personal-time-machine.html&amp;text=Personal%20Time%20Machine" class="popup">
+          <span class="rrssb-icon"><svg xmlns="https://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 28 28"><path d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62c-3.122.162-6.22-.646-8.86-2.32 2.702.18 5.375-.648 7.507-2.32-2.072-.248-3.818-1.662-4.49-3.64.802.13 1.62.077 2.4-.154-2.482-.466-4.312-2.586-4.412-5.11.688.276 1.426.408 2.168.387-2.135-1.65-2.73-4.62-1.394-6.965C5.574 7.816 9.54 9.84 13.802 10.07c-.842-2.738.694-5.64 3.434-6.48 2.018-.624 4.212.043 5.546 1.682 1.186-.213 2.318-.662 3.33-1.317-.386 1.256-1.248 2.312-2.4 2.942 1.048-.106 2.07-.394 3.02-.85-.458 1.182-1.343 2.15-2.48 2.71z"></path></svg></span>
           <span class="rrssb-text">twitter</span>
         </a>
       </li>
@@ -471,9 +545,8 @@ Fit this model (which will have only differences and no AR or MA coefficients) a
       <li class="rrssb-linkedin">
       <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://techievena.github.io/machine_learning/2016/12/29/personal-time-machine.html" class="popup">
         <span class="rrssb-icon">
-          <svg xmlns="https://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
-            <path d="M25.424 15.887v8.447h-4.896v-7.882c0-1.98-.71-3.33-2.48-3.33-1.354 0-2.158.91-2.514 1.802-.13.315-.162.753-.162 1.194v8.216h-4.9s.067-13.35 0-14.73h4.9v2.087c-.01.017-.023.033-.033.05h.032v-.05c.65-1.002 1.812-2.435 4.414-2.435 3.222 0 5.638 2.106 5.638 6.632zM5.348 2.5c-1.676 0-2.772 1.093-2.772 2.54 0 1.42 1.066 2.538 2.717 2.546h.032c1.71 0 2.77-1.132 2.77-2.546C8.056 3.593 7.02 2.5 5.344 2.5h.005zm-2.48 21.834h4.896V9.604H2.867v14.73z"
-            />
+          <svg xmlns="https://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 28 28">
+            <path d="M25.424 15.887v8.447h-4.896v-7.882c0-1.98-.71-3.33-2.48-3.33-1.354 0-2.158.91-2.514 1.802-.13.315-.162.753-.162 1.194v8.216h-4.9s.067-13.35 0-14.73h4.9v2.087c-.01.017-.023.033-.033.05h.032v-.05c.65-1.002 1.812-2.435 4.414-2.435 3.222 0 5.638 2.106 5.638 6.632zM5.348 2.5c-1.676 0-2.772 1.093-2.772 2.54 0 1.42 1.066 2.538 2.717 2.546h.032c1.71 0 2.77-1.132 2.77-2.546C8.056 3.593 7.02 2.5 5.344 2.5h.005zm-2.48 21.834h4.896V9.604H2.867v14.73z"></path>
           </svg>
         </span>
         <span class="rrssb-text">linkedin</span>
@@ -485,7 +558,7 @@ Fit this model (which will have only differences and no AR or MA coefficients) a
       <li class="rrssb-googleplus">
         <a href="https://plus.google.com/share?url=https://techievena.github.io/machine_learning/2016/12/29/personal-time-machine.html" class="popup">
           <span class="rrssb-icon">
-            <svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 8.29h-1.95v2.6h-2.6v1.82h2.6v2.6H21v-2.6h2.6v-1.885H21V8.29zM7.614 10.306v2.925h3.9c-.26 1.69-1.755 2.925-3.9 2.925-2.34 0-4.29-2.016-4.29-4.354s1.885-4.353 4.29-4.353c1.104 0 2.014.326 2.794 1.105l2.08-2.08c-1.3-1.17-2.924-1.883-4.874-1.883C3.65 4.586.4 7.835.4 11.8s3.25 7.212 7.214 7.212c4.224 0 6.953-2.988 6.953-7.082 0-.52-.065-1.104-.13-1.624H7.614z"/></svg>
+            <svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"><path d="M21 8.29h-1.95v2.6h-2.6v1.82h2.6v2.6H21v-2.6h2.6v-1.885H21V8.29zM7.614 10.306v2.925h3.9c-.26 1.69-1.755 2.925-3.9 2.925-2.34 0-4.29-2.016-4.29-4.354s1.885-4.353 4.29-4.353c1.104 0 2.014.326 2.794 1.105l2.08-2.08c-1.3-1.17-2.924-1.883-4.874-1.883C3.65 4.586.4 7.835.4 11.8s3.25 7.212 7.214 7.212c4.224 0 6.953-2.988 6.953-7.082 0-.52-.065-1.104-.13-1.624H7.614z"></path></svg>
           </span>
           <span class="rrssb-text">google+</span>
         </a>
@@ -507,7 +580,8 @@ Fit this model (which will have only differences and no AR or MA coefficients) a
 
 
   <div id="disqus_thread"></div>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
 
 
 <!-- Disqus Comments End -->
@@ -515,13 +589,13 @@ Fit this model (which will have only differences and no AR or MA coefficients) a
           
 
 
-          <hr />
+          <hr>
 
           
           <div class="author row">
-            <img class="col-xs-4 col-sm-3 col-md-2" src="/img/author.png" alt="Me" />
+            <img class="col-xs-4 col-sm-3 col-md-2" src="/img/author.png" alt="Me">
             <p class="col-xs-8 col-sm-9 col-md-10">
-              Abinash Senapati is currently pursuing his B.Tech. degree in I.I.T. Kharagpur, majoring in Electronics and Electrical Communications Engineering. His life has been guided by all the failures he has gone through. He believes that only road to success is through commitment, and the strength to drive through that commitment when life gets hard..................
+              Abinash Senapati is currently pursuing his B.Tech. degree in I.I.T. Kharagpur, majoring in Electronics and Electrical Communications Engineering. He is currently working as a developer @coala organization. He has interests in Open-Source coding and Embedded Electronics. He believes that only road to success is through commitment, and the strength to drive through that commitment when life gets hard..................
             </p>
           </div>
           
@@ -558,10 +632,9 @@ Fit this model (which will have only differences and no AR or MA coefficients) a
     <p><br><br></p>
 
     <div class="container text-center">
-        <p>Copyright &copy; Abinash Senapati 2017</p>
+        <p>Copyright © Abinash Senapati 2017</p>
         
-        <p style="font-size: 16px;"><a href="https://keybase.io/techievena" target="_blank"><i
-                class="fa fa-key"></i> techievena on Keybase</a></p>
+        <p style="font-size: 16px;"><a href="https://keybase.io/techievena" target="_blank"><i class="fa fa-key"></i> techievena on Keybase</a></p>
         
     </div>
 </footer>
@@ -745,11 +818,9 @@ function addTohistory() {
 <!-- Javascript End -->
 
 
-  <audio class="back-audio" src="/music/pirate.mp3" loop ="true" autoplay />
+  <audio class="back-audio" src="/music/pirate.mp3" loop="true" autoplay></audio>
 
 
 
   </body>
-</html>
-
-<!-- Post Layout End -->
+</html><!-- Post Layout End -->

@@ -127,7 +127,7 @@ rm(dt,d_u,f_u,s_u,e.date,s.date,i,j,k)
 {% endraw %}
 </code></pre>
 
-In the environment window as you can see we have four variables namely, __inputtable__(containing the table given to us), __date_unit__(containing sum of units and number of units sold per day), and two time series __time_series_unit__, time_series_frequency__. Now let's plot both of them.  
+In the environment window as you can see we have four variables namely, __inputtable__(containing the table given to us), __date_unit__(containing sum of units and number of units sold per day), and two time series __time_series_unit__ and __time_series_frequency__. Now let's plot both of them.  
 <pre><code data-trim class="r">
 {% raw %}
 par(mfrow=c(1,2))
@@ -136,7 +136,7 @@ plot(time_series_frequency)
 {% endraw %}
 </code></pre>  
 ![our-time-series](https://github.com/Techievena/Retail-Analysis/blob/master/time_series_plot.png?raw=true "Plots of both of the time series")
-Both of them as we see are highly random plots.
+Both of them, as we see are highly random plots.
 
 ## PROCESSING THE TIME-SERIES
 
@@ -200,4 +200,75 @@ The ARIMA model is the general class of model for time-series forecasting and th
 
 >__(ix)__ Ideally you will end up with a fairly simple model whose highest-order coefficients are significant and which has no significant residual autocorrelations and shows no signs of under-differencing or over-differencing. Also, you should check the residual normal probability plot to make sure it looks OK, as with any type of forecasting model.
 
-😉
+Now let's apply differencing to both the time series
+![diff-time-series](https://github.com/Techievena/Retail-Analysis/blob/master/diff_plot.png?raw=true "Plots of differenced time series")
+As, we see, this plot is slightly more stationary than original plot i.e., it is mean reverting. So, we need a differencing of 1. But we need to deal with is the change in variance and the high peaks at some points.
+
+Also if you carefully notice the acf and pacf plots of __time_series_unit__ you can see a seasonality pattern with seasonality with a period of 7. Well the spikes are not very clear there but it will be clear with the acf plots of diff time series.
+
+<pre><code data-trim class="r">
+{% raw %}
+par(mfrow=c(1,2))
+acf(diff(time_series_unit), lag.max = 20, na.action = na.pass, ci.type='ma') #lag1 correlation = -0.5 differencing done
+acf(diff(time_series_frequency), lag.max = 20, na.action = na.pass, ci.type='ma') #lag1 correlation = -0.5 differencing done
+{% endraw %}
+</code></pre>    
+![acf plot of diff](https://github.com/Techievena/Retail-Analysis/blob/master/acfdiff.png?raw=true "Plots of acf of the diff time series")  
+- Positive spikes at lag of 7 => **Seasonality of period 7**  
+- Lag1 autocorrelation greater than **-0.5** => Slight overdifferencing done  
+
+**N.B.:- Adding an AR term corrects for mild under-differencing, while adding an MA term corrects for mild overdifferencing.**  
+**N.B.:- An SAR signature usually occurs when the autocorrelation at the seasonal period is positive, whereas an SMA signature usually occurs when the seasonal autocorrelation is negative.**
+
+Taking both of them into consideration, let's apply our ARIMA model.
+
+<pre><code data-trim class="r">
+{% raw %}
+fit<-arima(time_series_unit, order=c(0,1,1), seasonal=list(order=c(1,1,0), period=7))
+fitunit<-arima(time_series_frequency, order=c(0,1,1), seasonal=list(order=c(1,1,0), period=7))
+
+forecast(fit, h=7)
+#    Point Forecast      Lo 80    Hi 80     Lo 95    Hi 95
+#914      -1.095303 -130.50604 128.3154 -199.0119 196.8213
+#915      37.789484  -91.62125 167.2002 -160.1272 235.7061
+#916      35.287727  -94.12301 164.6985 -162.6289 233.2044
+#917      40.755913  -88.65482 170.1666 -157.1607 238.6726
+#918       3.672253 -125.73848 133.0830 -194.2444 201.5889
+#919      14.485642 -114.92509 143.8964 -183.4310 212.4023
+#920      21.723083 -107.68765 151.1338 -176.1936 219.6397
+#Forecast for the next 7 days is shown in column Point Forecast
+#Let's get the plot
+plot(forecast(arima(time_series_unit, order=c(0,1,1), seasonal=list(order=c(1,1,0), period=7)),h=7), main="ARIMA Forecast for time_series_unit")
+
+forecast(fitunit, h=7)
+#    Point Forecast      Lo 80    Hi 80     Lo 95    Hi 95
+#914    -0.08618037 -18.790181 18.61782 -28.69148 28.51912
+#915    12.23003197  -6.473969 30.93403 -16.37527 40.83533
+#916     6.35255708 -12.351444 25.05656 -22.25274 34.95786
+#917    11.79129452  -6.912706 30.49530 -16.81401 40.39660
+#918     3.03634473 -15.667656 21.74035 -25.56896 31.64165
+#919     6.47508218 -12.228919 25.17908 -22.13022 35.08038
+#920     8.91381963  -9.790181 27.61782 -19.69148 37.51912
+#Forecast for the next 7 days is shown in column Point Forecast
+#Let's get the plot
+plot(forecast(arima(time_series_frequency, order=c(0,1,1), seasonal=list(order=c(1,1,0), period=7)),h=7), main="ARIMA Forecast for time_series_frequency")
+{% endraw %}
+</code></pre>  
+![arima time_series_unit](https://github.com/Techievena/Retail-Analysis/blob/master/arima_tsu.png?raw=true "Forecasts from ARIMA(0,1,1)(1,1,0)")
+![arima time_series_frequency](https://github.com/Techievena/Retail-Analysis/blob/master/arima_tsf.png?raw=true "Forecasts from ARIMA(0,1,1)(1,1,0)")
+
+To get a more clear picture of our forecasts,  
+<pre><code data-trim class="r">
+{% raw %}
+par(mfrow=c(1,2))
+plot(forecast(arima(time_series_unit, order=c(0,1,1), seasonal=list(order=c(1,1,0), period=7)),h=7), include=50, main="TIME_SERIES_UNIT")
+plot(forecast(arima(time_series_frequency, order=c(0,1,1), seasonal=list(order=c(1,1,0), period=7)),h=7), include=50, main="TIME_SERIES_FREQUENCY")
+{% endraw %}
+</code></pre>  
+![arima-time-series](https://github.com/Techievena/Retail-Analysis/blob/master/arima_pred.png?raw=true "Forecasts of both of the time series")
+
+So, we have got some nice predictions of our total number of units and total number of products to be sold each day, for the next week. Nice going!!!
+
+The application of time series modelling ends right here. Now, for knowing who are the customers who are coming to our shop for the next week, you have to wait for my another blog post, because that involves a completely different concept like calculating **CLV(Customer Lifetime Value)** using recency and frequency. Basically, a completely different concept which I do not want to discuss here. Because mixing both of them will cause a lot of chaos and everything will be messed up. You may subscribe to my [RSS feed](https://techievena.github.io/feed.xml) to get updates about when the post about CLV is coming. 
+
+**Well till then, happy coding!!!** :wink:

@@ -20,6 +20,7 @@ Python is an easy to learn, powerful programming language. It has efficient high
 
 If you do much work on computers, eventually you find that there’s some task you’d like to automate. For example, you may wish to perform a search-and-replace over a large number of text files, or rename and rearrange a bunch of photo files in a complicated way. Perhaps you’d like to write a small custom database, or a specialized GUI application, or a simple game.
 
+## YOUR OWN DABBA
 Well, now we will set up a basic project directory. This is the basic skeleton directory which will have all the basics needed to get a new project up and running. It will have a project layout, automated tests, modules, and install scripts. 
 
 **NB:- You must install pip, distribute, nose & virtualenv before you proceed further**
@@ -133,7 +134,18 @@ def test_basic():
 	print "I RAN!"
 </code></pre>
 
-##### DONE
+After this make sure you execute `nosetests` in your project root directory. The output must look like this.
+
+<pre><code data-trim class="bash">
+$ nosetests
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.071s
+
+OK
+</code></pre>
+
+**DONE** :v: 
 
 Now this is the basic structure of a python project. You can now modify this according to your own wish and start making your own projects and give yourself the tag of a developer!!! Well I already have and will show you how to do so...
 
@@ -145,6 +157,6 @@ Now this is the basic structure of a python project. You can now modify this acc
 >__(v)__ Put my script executable `Game.py` file in `bin` directory<br><br>
 >__(vi)__ Edited the files `setup.py`, `release.py`<br><br>
 
-**You can find my Roomzoned game [here](https://github.com/Techievena/Roomzoned)**
+**You can find my Roomzoned game [here](https://github.com/Techievena/Roomzoned) or else can download it from [here](https://github.com/Techievena/Roomzoned/raw/master/dist/Roomzoned-0.1.tar.gz)**
 
-Here goes your dabba served on your table.... :wink:
+**Here goes your dabba into your bag....** :wink:
