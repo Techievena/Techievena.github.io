@@ -121,17 +121,26 @@ if __name__ == "__main__":
 Finally the skeleton of the `tests/NAME_tests.py`.
 
 <pre><code data-trim class="python">
+import sys
 from nose.tools import *
 import NAME
 
-def setup():
-	print "SETUP!"
+# Your test unit. The name of this class is displayed in the test
+# evaluation.
+class YourTest(unittest.TestCase):
+    def setUp(self):
+        # Here you can set up your stuff. For example constant values,
+        # initializations etc.
+        pass
 
-def teardown():
-	print "TEAR DOWN!"
+    def tearDown(self):
+        # Here you clean up your stuff initialized in setUp(). For example
+        # deleting arrays, call operating system API etc.
+        pass
 
-def test_basic():
-	print "I RAN!"
+    def test_case1(self):
+        # A test method. Put your test code here.
+        pass
 </code></pre>
 
 After this make sure you execute `nosetests` in your project root directory. The output must look like this.
