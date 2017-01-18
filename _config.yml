@@ -34,7 +34,7 @@ title: "{ @Techievena }"
 description: "The personal website and blog of Abinash Senapati, undergraduate student @ I.I.T. Kharagpur. Blogging to give an overview of the stuffs I do....."
 keywords: "Senapati, Abinash, techievena, Kharagpur, IIT, kgp, machine, tech, learning, data analytics, case study, open-source"
 favicon: "/img/favicon.ico"
-audio: "/music/pirate.mp3"
+audio: 
 
 ################
 # Header layout #
@@ -140,7 +140,7 @@ email: "abinashsena@gmail.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Abinash Senapati is currently pursuing his B.Tech. degree in I.I.T. Kharagpur, majoring in Electronics and Electrical Communications Engineering. He is currently working as a developer @coala organization. His fields of interest include Open-Source coding and Embedded Electronics. He believes that only road to success is through commitment, and the strength to drive through that commitment when life gets hard.................."
+author_blurb: "Abinash Senapati is currently pursuing his B.Tech. degree in I.I.T. Kharagpur, majoring in Electronics and Electrical Communications Engineering. He is currently working as a developer <a href=https://coala.io/>@coala</a> organization. His fields of interest include Open-Source coding and Embedded Electronics. He believes that only road to success is through commitment, and the strength to drive through that commitment when life gets hard.................."
 author_blurb_image: "/img/author.png"
 
 ##################
