@@ -31,8 +31,8 @@ force-https: True
 lang: "en"
 author: "Abinash Senapati"
 title: "{ @Techievena }"
-description: "The personal website and blog of Abinash Senapati, undergraduate student @ I.I.T. Kharagpur. Blogging to give an overview of the stuffs I do....."
-keywords: "Senapati, Abinash, techievena, Kharagpur, IIT, kgp, machine, tech, learning, data analytics, case study, open-source"
+description: "The personal website and blog of Abinash Senapati a.k.a. Techievena."
+keywords: "Senapati, Abinash, techievena, IIT, Kharagpur, Machine Learning, Data Analytics, Google Code-in, Open Source, Google Source of Code"
 favicon: "/img/favicon.ico"
 audio: 
 
@@ -56,8 +56,10 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Believe you can . . ."
-  - text: "and you are halfway there"
+  - text: "Good, better, best."
+  - text: "Never let it rest."
+  - text: "'Til your good is better"
+  - text: "and your better is best."
 
 me-img: "/img/abinash.png"
 
@@ -113,14 +115,17 @@ syntax-highlight: True
 
 events:
   - image: "/img/timeline/coala-analyzer.png"
-    date: "December 2016 - Today"
+    date: "Dec 2017 - Jan 2018"
+    description: "GCI Mentor @ coala !!!"
+  - image: "/img/timeline/open-source.png"
+    date: "Dec 2016 - Today"
     description: "Open Source !!!"
   - image: "/img/timeline/iitkgp.png"
     date: "July 2015 - Today"
     description: "Home away from Home @ Kgp !!!!"
   - image: "/img/timeline/spidertocat.png"
-    date: "May 2007 - March 2015"
-    description: "School @ DAV!!!"
+    date: "May 2007 - Mar 2015"
+    description: "School @ DAV !!!"
 
 # First image of the Timeline
 
@@ -140,7 +145,7 @@ email: "abinashsena@gmail.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Abinash Senapati is currently pursuing his B.Tech. degree in I.I.T. Kharagpur, majoring in Electronics and Electrical Communications Engineering. He is currently working as a developer <a href=https://coala.io/>@coala</a> organization. His fields of interest include Open-Source coding and Embedded Electronics. He believes that only road to success is through commitment, and the strength to drive through that commitment when life gets hard.................."
+author_blurb: "Abinash Senapati is currently a pre-final year undergraduate in <a href='http://iitkgp.ac.in/' target='blank'>Indian Institute of Technology, Kharagpur</a>. Pursuing a major in Electronics and Electrical Communication Engineering academically, he is mostly intrigued by the recent developments in the field of deep learning and blockchain technology. He is an active developer, working with three open-source organisations at the moment; namely <a href='https://www.apertium.org/' target='blank'>Apertium</a>, <a href='http://coala.io/' target='blank'>coala</a> and <a href='https://gitmate.io/'' target='blank'>gitmate</a>."
 author_blurb_image: "/img/author.png"
 
 ##################
