@@ -3,7 +3,7 @@ layout: post
 section-type: post
 title: PYTHON ka DABBA
 category: Python
-tags: [ 'Open-Source', 'Python', 'Technology', 'Learning' ]
+tags: [ 'open-source', 'python', 'technology', 'learning' ]
 ---
 
 ## THE DABBA

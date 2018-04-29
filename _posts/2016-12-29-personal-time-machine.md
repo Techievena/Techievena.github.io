@@ -3,7 +3,7 @@ layout: post
 section-type: post
 title: Personal Time Machine
 category: machine_learning
-tags: [ 'ARIMA', 'Time Modelling', 'Prediction via Analysis' ]
+tags: [ 'arima', 'time modelling', 'prediction via analysis' ]
 ---
 
 ## GOING AHEAD OF TIME
