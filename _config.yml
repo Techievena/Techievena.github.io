@@ -114,18 +114,21 @@ syntax-highlight: True
 ############
 
 events:
+  - image: "/img/timeline/apertium.png"
+    date: "Apr 2018 - Present"
+    description: "**Apertium** - Google Summer of Code student"
   - image: "/img/timeline/coala-analyzer.png"
     date: "Dec 2017 - Jan 2018"
-    description: "GCI Mentor @ coala !!!"
+    description: "**coala** - Google Code-in Mentor"
   - image: "/img/timeline/open-source.png"
-    date: "Dec 2016 - Today"
+    date: "Dec 2016 - Present"
     description: "Open Source !!!"
   - image: "/img/timeline/iitkgp.png"
-    date: "July 2015 - Today"
-    description: "Home away from Home @ Kgp !!!!"
+    date: "July 2015 - Present"
+    description: "**IIT Kharagpur** - B.Tech. in E&ECE department"
   - image: "/img/timeline/spidertocat.png"
     date: "May 2007 - Mar 2015"
-    description: "School @ DAV !!!"
+    description: "**DAV Unit-8** - High School"
 
 # First image of the Timeline
 
