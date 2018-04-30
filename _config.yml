@@ -117,7 +117,7 @@ events:
   - image: "/img/timeline/apertium.png"
     date: "Apr 2018 - Present"
     description: "**Apertium** - Google Summer of Code student"
-  - image: "/img/timeline/coala-analyzer.png"
+  - image: "/img/timeline/coala.png"
     date: "Dec 2017 - Jan 2018"
     description: "**coala** - Google Code-in Mentor"
   - image: "/img/timeline/open-source.png"
@@ -126,7 +126,7 @@ events:
   - image: "/img/timeline/iitkgp.png"
     date: "July 2015 - Present"
     description: "**IIT Kharagpur** - B.Tech. in E&ECE department"
-  - image: "/img/timeline/spidertocat.png"
+  - image: "/img/timeline/school.png"
     date: "May 2007 - Mar 2015"
     description: "**DAV Unit-8** - High School"
 
