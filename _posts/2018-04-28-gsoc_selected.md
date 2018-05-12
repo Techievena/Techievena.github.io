@@ -30,6 +30,10 @@ This idea looked quite fascinating and intriguing to me for which I submitted a 
 
 ## What do I plan next?
 
+[![Extend lttoolbox to have the power of HFST](/img/post_images/selected.png)](https://summerofcode.withgoogle.com/projects/#4841842567282688)
+
 Getting selected in Google Summer of Code is like a dream come true opportunity for me. I am looking forward to a very exciting and productive summer this year. Under the guidance of my mentor **Tommi Pirinen**, I will put my best effort to produce a solid proof of concept that will be helpful to the community and to the users of Apertium as well.  
+
+[![Project Details](/img/post_images/project_view.png)](https://summerofcode.withgoogle.com/projects/#4841842567282688)
 
 Every fortnight I will be posting the updates of my progress here. So, stay tuned!!! :smile:
