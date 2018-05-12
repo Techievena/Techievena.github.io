@@ -114,6 +114,9 @@ syntax-highlight: True
 ############
 
 events:
+  - image: "/img/timeline/societe-generale.png"
+    date: "May 2018 - Present"
+    description: "**Société Générale** - Summer Intern"
   - image: "/img/timeline/apertium.png"
     date: "Apr 2018 - Present"
     description: "**Apertium** - Google Summer of Code student"
