@@ -85,6 +85,39 @@
   
     
   
+    
+  
+    
+      <url>
+        <loc>https://techievena.github.io/blog/page2/</loc>
+        
+          
+          
+          
+          <priority>1.0</priority>
+          
+        
+       </url>
+    
+  
+  
+    <url>
+      <loc>https://techievena.github.io/gsoc/2018/08/07/gsoc-submission.html</loc>
+      
+        <lastmod>2018-08-07T00:00:00+05:30</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://techievena.github.io/gsoc/2018/05/22/gsoc-phase1-week-1-2.html</loc>
+      
+        <lastmod>2018-05-22T00:00:00+05:30</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
   
     <url>
       <loc>https://techievena.github.io/gsoc/2018/05/11/gsoc-community-bonding.html</loc>
