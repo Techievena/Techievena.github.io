@@ -11,11 +11,11 @@ tags: [ 'amazon', 'alexa', 'apertium' ]
 ---
 
 ## MOTIVATION
-This news article that popped up on my notifications screen yesterday demonstrates the power of language in our world. It is quite inappropriate to regard language just as a method for communication. Huge experiences, history and views of the world human being have been soaked deeply into a language since the beginning of the world. I come from country that houses over 1600 languages of which around 150 have a sizeable speaking population even today. Most of them are on the verge of extinction and with ordered morphological rules, rule based machine translation is the most promising and viable option for their restoration.
+**KIA ORA, MATE** - A news article that popped up on my notifications screen yesterday demonstrated the power of language in our society. It was the disastrous failure of the conglomerate _Coca Cola_ ad campaign while attempting to combine reo Maori and English. This has backfired quite badly as the company has inadvertently written _"Hello, Death"_ on a vending machine in New Zealand. It is quite inappropriate to regard language just as a method for communication. Huge experiences, history, and views of the world human being have been soaked deeply into a language since the beginning of the world. I come from a country that houses over 1600 languages of which around 150 have a sizeable speaking population even today. Most of them are on the verge of extinction and with ordered morphological rules, rule-based machine translation is the most promising and viable option for their restoration.
 
 [![Kia Ora](/img/post_images/kia_ora.jpg)](https://boingboing.net/2018/10/15/coca-cola-trying-to-mix-maori.html)
 
-_"There are at least two other more serious problems for endangered languages, more acute than just lack of mother-tongue transmission. There are languages whose last fluent speakers are already gone or are about to go. At a meeting at Glorieta near Santa Fe, New Mexico, a few months ago, we had actually the last living speaker of one of the languages come. It was a very sad experience for everyone, not just for that woman. And perhaps the saddest thing is that she cannot even talk to her sister anymore, who was the next-to-last speaker before she recently died. She can not call up anybody. **The only person for her to talk to is a linguist and that is no fun.**"_
+> > _"There are at least two other more serious problems for endangered languages, more acute than just lack of mother-tongue transmission. There are languages whose last fluent speakers are already gone or are about to go. At a meeting at Glorieta near Santa Fe, New Mexico, a few months ago, we had actually the last living speaker of one of the languages come. It was a very sad experience for everyone, not just for that woman. And perhaps the saddest thing is that she cannot even talk to her sister anymore, who was the next-to-last speaker before she recently died. She can not call up anybody. **The only person for her to talk to is a linguist and that is no fun.**"_
 
 It is very sad to hear of stories like this. A proper free and open source language translation system for the indigenous languages is the need of the hour.
 
@@ -29,23 +29,25 @@ At present, Apertium has released 40 stable language pairs, delivering fast tran
 Smart Apertium skill primarily uses Apertium-Apy, the API of Apertium to provide the users translations that are currently available in production phase of Apertium. You can also use this skill to learn all the translations that are offered by Apertium. This skill also helps in identifying the language spoken by the user. Though, document and website translation are also some of the primary features of Apertium, they are currently under development in this skill and are going to be live soon.
 
 ## Skill Invocation
-* _"Alexa open Smart Apertium"_  
+* _**"Alexa open Smart Apertium"**_  
 
 _"Welcome to the Smart Apertium Translator. You can ask me to translate a sentence, translate a document or identify the language of speech. You can also know what type of language translations are currently available in the skill. So what do you want to do for now?"_
 
-* _"Alexa ask Smart Apertium how do you say happy birthday in Spanish"_  
+* _**"Alexa ask Smart Apertium how do you say happy birthday in Spanish"**_  
 
 _"Cumpleaños feliz"_
 
-* _"Alexa ask Smart Apertium how do you say eu vou correr in Spanish language"_  
+* _**"Alexa ask Smart Apertium how do you say eu vou correr in Spanish language"**_  
 
 _"English language can be translated from Catalan, Welsh, Macedonian, Serbo-Croatian, Basque, Icelandic, Esperanto, Galician, Spanish languages and translated to Galician, Spanish, Esperanto, Catalan languages."_
 
-* _"Alexa ask Smart Apertium hola amigos is in which language"_  
+* _**"Alexa ask Smart Apertium hola amigos is in which language"**_  
 
 _"The phrase spoken is in Spanish language."_
 
 ## Video Demonstration
+Click on the link below for video demonstration.
+
 [![Smart Apertium](https://img.youtube.com/vi/BWCd3t3bjGY/0.jpg)](https://www.youtube.com/watch?v=BWCd3t3bjGY)
 
 ## Link to the Skill

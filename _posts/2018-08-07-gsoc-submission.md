@@ -6,7 +6,7 @@ category: GSoC
 tags: [ 'apertium', 'hfst', 'morphology', 'transducer', 'fst', 'gsoc', 'weights' ]
 ---
 
-[![Flip bits not burgers](https://www.faveohelpdesk.com/wp-content/uploads/2016/05/language-1000x507.jpg)](https://summerofcode.withgoogle.com/archive/2018/projects/)
+[![Flip bits not burgers](http://vip-k.ir/Administrator/Files/slider/slide22128.png)](https://summerofcode.withgoogle.com/archive/2018/projects/)
 
 ---
 

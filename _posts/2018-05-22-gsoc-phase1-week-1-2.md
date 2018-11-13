@@ -6,7 +6,7 @@ category: GSoC
 tags: [ 'apertium', 'hfst', 'morphology', 'transducer', 'fst', 'gsoc', 'weights' ]
 ---
 
-[![Weight ≠ Mass × Gravity](https://omega-coder.github.io/assets/images/newton_head.png)](https://summerofcode.withgoogle.com/dashboard/timeline/)
+[![Weight ≠ Mass × Gravity](http://all-funny.info/wp-content/uploads/2014/06/isaac_newton-steve_jobs.jpg)](https://summerofcode.withgoogle.com/dashboard/timeline/)
 
 ---
 
@@ -15,7 +15,7 @@ _"Our life is the sum total of all the decisions we make every day, and those de
 
 ## Introduction
 
-Well you all must be thinking WTF is this blog title? This moron now thinks that he has somehow disproved **THE Newton** and is sitting on his couch blogging instead of claiming the Nobel prize. Then hold on to your brakes guys. This blog is entirely about some different kind of weights, well priorities to be exact; but I needed a fun title to grab you here.
+Well you all must be thinking What The F&$k is this blog title? This moron now thinks that he has somehow disproved **THE Newton** and is sitting on his couch blogging instead of claiming the Nobel prize. Then hold on to your brakes guys. This blog is entirely about some different kind of weights, well priorities to be exact; but I needed a fun title to grab you here.
 
 Not every task we perform in a day deserves or gets exactly the same amount of attention from our part. We prioritize our decisions and actions based on our necessities and abilities. Same should be the case with Apertium. All the morphological transductions performed in Apertium must be done based on the priorities. This will make the machine translation process more efficient and humanly. Priorities in Apertium are to be calculated on the basis of the weight values associated with each step of the transduction. Geeky stuff resumes in 1... 2... 3...
 
