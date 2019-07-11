@@ -115,6 +115,9 @@ syntax-highlight: True
 
 events:
   - image: "/img/timeline/societe-generale.png"
+    date: "June 2019 - Present"
+    description: "**Société Générale** - Software Engineer"
+  - image: "/img/timeline/societe-generale.png"
     date: "May 2018 - July 2018"
     description: "**Société Générale** - Summer Intern"
   - image: "/img/timeline/apertium.png"
@@ -127,7 +130,7 @@ events:
     date: "Dec 2016 - Present"
     description: "Open Source !!!"
   - image: "/img/timeline/iitkgp.png"
-    date: "July 2015 - Present"
+    date: "July 2015 - May 2019"
     description: "**IIT Kharagpur** - B.Tech. in E&ECE department"
   - image: "/img/timeline/school.png"
     date: "May 2007 - Mar 2015"
@@ -151,7 +154,7 @@ email: "abinashsena@gmail.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Abinash Senapati is currently a final year undergraduate in <a href='http://iitkgp.ac.in/' target='blank'>Indian Institute of Technology, Kharagpur</a>. Pursuing a major in Electronics and Electrical Communication Engineering academically, he is mostly intrigued by the recent developments in the field of deep learning and blockchain technology. He is an active developer, working with three open-source organisations at the moment; namely <a href='https://www.apertium.org/' target='blank'>Apertium</a>, <a href='http://coala.io/' target='blank'>coala</a> and <a href='https://gitmate.io/'' target='blank'>gitmate</a>."
+author_blurb: "I am a graduate student from <a href='http://iitkgp.ac.in/' target='blank'>Indian Institute of Technology, Kharagpur</a> with a major in Electronics and Electrical Communication Engineering. I have deep interest in application of Deep Learning and Blockchain technologies to solve real world problems. I am an active developer, working with three open-source organisations at the moment; namely <a href='https://www.apertium.org/' target='blank'>Apertium</a>, <a href='http://coala.io/' target='blank'>coala</a> and <a href='https://gitmate.io/'' target='blank'>gitmate</a>."
 author_blurb_image: "/img/author.png"
 
 ##################
