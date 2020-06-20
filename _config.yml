@@ -12,7 +12,7 @@ url: "https://techievena.github.io"
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-baseurl: 
+baseurl:
 
 # Google tracking id
 
@@ -34,7 +34,7 @@ title: "{ @Techievena }"
 description: "The personal website and blog of Abinash Senapati a.k.a. Techievena."
 keywords: "Senapati, Abinash, techievena, IIT, Kharagpur, Machine Learning, Data Analytics, Google Code-in, Open Source, Google Source of Code"
 favicon: "/img/favicon.ico"
-audio: 
+audio:
 
 ################
 # Header layout #
@@ -42,24 +42,22 @@ audio:
 
 black-favicon: "/img/blackicon.ico"
 
-background-img: "../img/intro-bg.jpg"
+background-img: "../img/intro-bg-blur.jpg"
 
 ##############################
 # Dynamic Text on the Header #
 ##############################
 
-dynamic-typing: True
+dynamic-typing: False
 shuffle: False # Shuffle the lines.
 loop: True
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
-type-speed: 10
+type-speed: 5
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Good, better, best."
-  - text: "Never let it rest."
-  - text: "'Til your good is better"
-  - text: "and your better is best."
+  - text: "Chaos was the law of nature;"
+  - text: "Order was the dream of man."
 
 me-img: "/img/abinash.png"
 

@@ -1,4 +1,4 @@
-I"T<p><a href="https://summerofcode.withgoogle.com/dashboard/timeline/"><img src="https://learncodethehardway.org/images/peeps.png" alt="Community Bonding Period" /></a></p>
+I"g<p><a href="https://summerofcode.withgoogle.com/dashboard/timeline/"><img src="https://learncodethehardway.org/images/peeps.png" alt="Community Bonding Period" /></a></p>
 
 <hr />
 
@@ -13,7 +13,7 @@
 
 <p>As I had already spent a considerable time communicating with the org members previously and was not new to the organisation, introducing myself to the community part was already done before the commencement of this period. Therefore, I spent most of the community bonding period understanding the codebase of lttoolbox and hfst, in the best possible manner I could. I also fixed a bug in the lexc2dix package, and am working on scraping important information from the comment part in the lexc files to be restored in the dix files.</p>
 
-<p>Also Francis (a.k.a. spectie) has helped me a lot in carving a roadway for the implementation of weights in lttoolbox. He has created two issues on which I am currently working. The first one of them is to have a minimal implementation of weight based analyses in the <code class="highlighter-rouge">att_compiler</code>, as we do not have to deal with minimization and decomposition algorithms in the att format. I have got to add this important feature without causing any breakage in the existing package. The second of them deals with having an option in lttoolbox for returning the N best analyses based on their weight values, a feature similar to the one already present in hfst.</p>
+<p>Also Francis (a.k.a. spectie) has helped me a lot in carving a roadway for the implementation of weights in lttoolbox. He has created two issues on which I am currently working. The first one of them is to have a minimal implementation of weight based analyses in the <code class="language-plaintext highlighter-rouge">att_compiler</code>, as we do not have to deal with minimization and decomposition algorithms in the att format. I have got to add this important feature without causing any breakage in the existing package. The second of them deals with having an option in lttoolbox for returning the N best analyses based on their weight values, a feature similar to the one already present in hfst.</p>
 
 <p>After discussion with my mentor Tommi (a.k.a. Flammie) regarding the implementation of morphographemics in lttoolbox, I have submitted a post in the apertium-stuff mailing list requesting other developers to help me finalize a syntax for the rule entries in the dix files.</p>
 

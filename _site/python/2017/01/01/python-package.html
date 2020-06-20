@@ -253,9 +253,9 @@ $ touch NAME/__init__.py
 $ touch tests/__init__.py
 </code></pre>
 
-<p>You must be wondering why this bro? Well let me clarify it now. Every python package must have an <code class="highlighter-rouge">__init__.py</code> file. Consider <code class="highlighter-rouge">__init__.py</code> file as the basic qualification of a python package.</p>
+<p>You must be wondering why this bro? Well let me clarify it now. Every python package must have an <code class="language-plaintext highlighter-rouge">__init__.py</code> file. Consider <code class="language-plaintext highlighter-rouge">__init__.py</code> file as the basic qualification of a python package.</p>
 
-<p>Now put this code inside your <code class="highlighter-rouge">NAME/release.py</code> file. This file will be important later when you learn about version control and arguement passing method. Edit this as per the project and you are the owner of the project. That’s it!</p>
+<p>Now put this code inside your <code class="language-plaintext highlighter-rouge">NAME/release.py</code> file. This file will be important later when you learn about version control and arguement passing method. Edit this as per the project and you are the owner of the project. That’s it!</p>
 
 <pre><code data-trim="" class="python">
 """Release file for NAME"""
@@ -283,7 +283,7 @@ __download_url__ = 'url to download the project'
 $ pip install -r requirements.txt
 </code></pre>
 
-<p>Now onto the main sabji of our dabba, the <code class="highlighter-rouge">setup.py</code> file. Put the content given below inside your <code class="highlighter-rouge">setup.py</code> file.</p>
+<p>Now onto the main sabji of our dabba, the <code class="language-plaintext highlighter-rouge">setup.py</code> file. Put the content given below inside your <code class="language-plaintext highlighter-rouge">setup.py</code> file.</p>
 <pre><code data-trim="" class="python">
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
@@ -324,7 +324,7 @@ if __name__ == "__main__":
     )
 </code></pre>
 
-<p>Finally the skeleton of the <code class="highlighter-rouge">tests/NAME_tests.py</code>.</p>
+<p>Finally the skeleton of the <code class="language-plaintext highlighter-rouge">tests/NAME_tests.py</code>.</p>
 
 <pre><code data-trim="" class="python">
 import sys
@@ -349,7 +349,7 @@ class YourTest(unittest.TestCase):
         pass
 </code></pre>
 
-<p>After this make sure you execute <code class="highlighter-rouge">nosetests</code> in your project root directory. The output must look like this.</p>
+<p>After this make sure you execute <code class="language-plaintext highlighter-rouge">nosetests</code> in your project root directory. The output must look like this.</p>
 
 <pre><code data-trim="" class="bash">
 $ nosetests
@@ -366,12 +366,12 @@ OK
 
 <h2 id="making-my-first-python-game-roomzoned">MAKING MY FIRST PYTHON GAME ROOMZONED</h2>
 <blockquote>
-  <p><strong>(i)</strong> Made a copy of the skeleton directory. Named it <code class="highlighter-rouge">Roomzoned</code>.<br><br>
+  <p><strong>(i)</strong> Made a copy of the skeleton directory. Named it <code class="language-plaintext highlighter-rouge">Roomzoned</code>.<br><br>
 <strong>(ii)</strong> Renamed the NAME module to be the name of my project i.e. also Roomzoned (I just built a simple game. To keep it simple I named the project and the base package module same)<br><br>
-<strong>(iii)</strong> Renamed the <code class="highlighter-rouge">tests/NAME_tests.py</code> to <code class="highlighter-rouge">tests/Roomzoned_tests.py</code> and the <code class="highlighter-rouge">NAME</code> in the import statement to <code class="highlighter-rouge">Roomzoned</code><br><br>
+<strong>(iii)</strong> Renamed the <code class="language-plaintext highlighter-rouge">tests/NAME_tests.py</code> to <code class="language-plaintext highlighter-rouge">tests/Roomzoned_tests.py</code> and the <code class="language-plaintext highlighter-rouge">NAME</code> in the import statement to <code class="language-plaintext highlighter-rouge">Roomzoned</code><br><br>
 <strong>(iv)</strong> Put my modules into the Roomzoned package.<br><br>
-<strong>(v)</strong> Put my script executable <code class="highlighter-rouge">Game.py</code> file in <code class="highlighter-rouge">bin</code> directory<br><br>
-<strong>(vi)</strong> Edited the files <code class="highlighter-rouge">setup.py</code>, <code class="highlighter-rouge">release.py</code><br><br></p>
+<strong>(v)</strong> Put my script executable <code class="language-plaintext highlighter-rouge">Game.py</code> file in <code class="language-plaintext highlighter-rouge">bin</code> directory<br><br>
+<strong>(vi)</strong> Edited the files <code class="language-plaintext highlighter-rouge">setup.py</code>, <code class="language-plaintext highlighter-rouge">release.py</code><br><br></p>
 </blockquote>
 
 <p><strong>You can find my Roomzoned game <a href="https://github.com/Techievena/Roomzoned">here</a> or else can download it from <a href="https://github.com/Techievena/Roomzoned/raw/master/dist/Roomzoned-0.1.tar.gz">here</a></strong></p>
